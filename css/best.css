@@ -1,0 +1,276 @@
+      * { box-sizing: border-box; }
+
+      ul {
+        list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .best_box {
+          /* border: 1px solid black; */
+          height: 260px;
+      }
+
+      .best_box h2 {
+          text-align: center;
+          font-size: 28px;
+          color: #333;
+          font-weight: 500;
+          padding: 30px 0px;
+      }
+
+      .best_box_t {
+          border: 1px solid var(--border-color);
+          margin: 0 auto;
+          width: 55%;
+          height: 120px;
+      }
+
+      .best_box_t ul {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        padding-top: 30px;
+        margin: 0 auto;
+    }
+
+      .best_box_t li {
+        width: 25%;
+        padding: 10px 0px;
+        text-align:start;
+        
+      }
+
+      .best_box_t li a {
+        color: #333;
+        font-size: 14px;
+      }
+
+      .best_box_t li a:hover {
+        color: var(--main-purple);
+        font-weight: bold;
+      }
+
+
+
+    /* ///////////////container///////////////// */
+
+      .best_container {
+        margin: 0 auto;
+        width: 55%;
+        display: flex;
+      }
+
+      .best_filter {
+        /* background-color: lightblue; */
+        width: 25%;
+      }
+
+    
+
+      .best_filter_t {
+        height: 50px;
+        line-height: 50px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 10px;
+      }
+
+      .best_filter_t h3 {
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      .best_filter_t div {
+        color:var(--text-secondary);
+      }
+
+      .best_filter_box {
+        padding: 20px 10px;
+      }
+
+      .best_filter_box h3 {
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      .best_filter_box h4 {
+        font-size: 12px;
+        text-align: center;
+        color: var(--text-secondary);
+        padding: 15px 0px;
+        cursor: pointer;
+      }
+
+      .best_purple {
+        color: var(--sub-purple);
+      }
+      
+      .best_amt {
+        color: var(--text-secondary);
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      .best_filter_box ul {
+        padding: 10px 0px;
+      }
+
+      .best_filter_box li {
+        padding: 10px 0px;
+      }
+
+      .best_fix {
+        border-top: 1px solid var(--border-color);
+        border-bottom: 1px solid var(--border-color);
+      }
+
+      .best_category, .best_price, .best_brand,
+      .best_skintype, .best_type, .best_hairtype {
+        position: relative;
+        padding-top: 20px;
+        border-bottom: 1px solid var(--border-color);
+      }
+
+      .bb1 {
+        display: flex;
+      }
+
+      .bb1 li {
+       padding-top: 5px;
+       padding-right: 5px;
+       cursor: pointer;
+      }
+
+      .bb2 {
+        display: flex;
+        flex-wrap: wrap;
+        
+      }
+
+      .bb2 li a {
+        padding: 5px;
+        margin: 2px;
+        background-color: var(--border-color);
+        border-radius: 5px;
+      }
+      .bb2 li a:hover  {
+        background-color: #333;
+        color: #fff;
+      }
+
+
+      
+      .best_btn_up {
+        color: var(--text-secondary);
+        position: absolute;
+        right: 5px;
+        top: 20px;
+        font-size: 20px;
+      }
+      .best_btn {
+        border: 1px solid var(--text-secondary);
+        border-radius: 50%;
+        color: var(--text-secondary);
+        font-size: 10px;
+        width: 20px;
+        height: 20px;
+
+      }
+
+      .best_items {
+        /* background-color:lightcoral; */
+        width: 75%;
+      }
+
+       .best_items_t {
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        line-height: 50px;
+        padding: 0px 10px;
+      }
+
+      .best_items_t ul {
+        display: flex;
+      }
+
+      .best_items_t li {
+        padding-left: 10px;
+      }
+
+      .best_items_t li a{
+        color: var(--text-secondary);
+        cursor: pointer;
+      }
+      
+      .best_black {
+        color: var(--text-primary);
+      }
+      .best_items_i ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: center;
+      }
+
+      .best_items_i li {
+          width: 33%;
+          padding-bottom: 20px;
+      }
+
+      .best_items_i img {
+        width: 250px;
+        padding: 10px 0px;
+      }
+
+      .best_cart {
+        border: 1px solid var(--border-color);
+        border-radius: 5px;
+        font-size: 16px;
+        padding: 10px;
+        width: 250px;
+        margin: 0 auto;
+        cursor: pointer;
+      }
+
+      .best_items_c {
+        text-align: start;
+        padding: 8px;
+        cursor: pointer;
+      }
+
+      .best_p1 {
+        color: var(--text-secondary);
+        padding-bottom: 5px;
+      }
+
+      .best_p2 {
+        font-size: 15px;
+        letter-spacing: 0.8px;
+        padding-bottom: 10px;
+      }
+      .best_p3 {
+          color: var(--text-secondary);
+          font-size: 12px;
+          padding-bottom: 14px;
+      }
+      .best_p4 {
+        color: var(--text-secondary);
+        padding-bottom: 5px;
+        text-decoration: line-through;
+      }
+       .best_red {
+        color: red;
+        font-weight: bold;
+        padding-right: 8px;
+       }
+       .best_p5 {
+        font-weight: 800;
+        
+       }
+
+
