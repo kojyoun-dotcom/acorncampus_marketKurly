@@ -1,0 +1,16 @@
+.wrap{
+    width: 9156px;
+    border: 2px solid black;
+    height: 540px;
+    margin: 0 auto;
+
+}
+.wrap img{
+    width: 1900px;
+    height: 540px;
+}
+.wrap-text{
+    /* width: 950px;
+    height: 57px; */
+    /* border: 5px solid red; */
+}
