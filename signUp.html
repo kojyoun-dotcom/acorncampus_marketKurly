@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="/common.css">
+    <link rel="stylesheet" href="./css/signUp.css">
+    <script src="./js/include.js" defer></script>
+    <script src="./js/signUp.js" defer></script>
+
+</head>
+
+<body>
+    <main class="signup-container">
+        <section class="signup-content">
+            <h2 class="signup-title">회원가입</h2>
+            <p class="required-guide"><span class="ico-asterisk">*</span>필수입력사항</p>
+
+            <form class="signup-form" id="signupForm">
+                <div class="form-group">
+                    <label>아이디<span class="ico-asterisk">*</span></label>
+                    <div class="input-wrap">
+                        <input type="text" id="userId" placeholder="아이디를 입력해주세요">
+                        <button type="button" id="checkIdBtn" class="btn-outline">중복확인</button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>비밀번호<span class="ico-asterisk">*</span></label>
+                    <div class="input-wrap">
+                        <input type="password" id="password" placeholder="비밀번호를 입력해주세요">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>비밀번호확인<span class="ico-asterisk">*</span></label>
+                    <div class="input-wrap">
+                        <input type="password" id="passwordConfirm" placeholder="비밀번호를 한번 더 입력해주세요">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>이름<span class="ico-asterisk">*</span></label>
+                    <div class="input-wrap">
+                        <input type="text" id="userName" placeholder="이름을 입력해주세요">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>이메일<span class="ico-asterisk">*</span></label>
+                    <div class="input-wrap">
+                        <input type="email" id="email" placeholder="예: marketkurly@kurly.com">
+                        <button type="button" id="checkEmailBtn" class="btn-outline">중복확인</button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>주소<span class="ico-asterisk">*</span></label>
+                    <div class="input-wrap">
+                        <button type="button" id="searchAddress" class="btn-address"><span class="ico-search"></span>주소
+                            검색</button>
+                        <p class="sub-text">배송지에 따라 상품 정보가 달라질 수 있습니다.</p>
+                    </div>
+                </div>
+
+                <hr class="divider">
+
+                <div class="form-group agreement">
+                    <label>이용약관동의<span class="ico-asterisk">*</span></label>
+                    <div class="agreement-wrap">
+
+                        <div class="check-item all-check">
+                            <label class="custom-check">
+                                <input type="checkbox" id="all-agree" class="hidden-check">
+                                <span class="ico-check">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="circle"
+                                            d="M23.5 12C23.5 18.3513 18.3513 23.5 12 23.5C5.64873 23.5 0.5 18.3513 0.5 12C0.5 5.64873 5.64873 0.5 12 0.5C18.3513 0.5 23.5 5.64873 23.5 12Z"
+                                            stroke="#ddd" fill="#fff"></path>
+                                        <path class="v-line" d="M7 12.6667L10.3846 16L18 8.5" stroke="#ddd"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                                <span class="checkbox-text bold">전체 동의합니다.</span>
+                            </label>
+                            <p class="sub-text">선택 항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용하실 수 있습니다.</p>
+                        </div>
+
+                        <div class="check-item">
+                            <label class="custom-check">
+                                <input type="checkbox" id="agree-terms" class="hidden-check">
+                                <span class="ico-check">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="circle"
+                                            d="M23.5 12C23.5 18.3513 18.3513 23.5 12 23.5C5.64873 23.5 0.5 18.3513 0.5 12C0.5 5.64873 5.64873 0.5 12 0.5C18.3513 0.5 23.5 5.64873 23.5 12Z"
+                                            stroke="#ddd" fill="#fff"></path>
+                                        <path class="v-line" d="M7 12.6667L10.3846 16L18 8.5" stroke="#ddd"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                                <span class="checkbox-text">이용약관 동의 (필수)</span>
+                            </label>
+                            <a href="#" class="view-link">약관보기 ></a>
+                        </div>
+
+                        <div class="check-item">
+                            <label class="custom-check">
+                                <input type="checkbox" id="agree-privacy" class="hidden-check">
+                                <span class="ico-check">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="circle"
+                                            d="M23.5 12C23.5 18.3513 18.3513 23.5 12 23.5C5.64873 23.5 0.5 18.3513 0.5 12C0.5 5.64873 5.64873 0.5 12 0.5C18.3513 0.5 23.5 5.64873 23.5 12Z"
+                                            stroke="#ddd" fill="#fff"></path>
+                                        <path class="v-line" d="M7 12.6667L10.3846 16L18 8.5" stroke="#ddd"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                                <span class="checkbox-text">개인정보 수집·이용 동의 (필수)</span>
+                            </label>
+                            <a href="#" class="view-link">약관보기 ></a>
+                        </div>
+
+                        <div class="check-item">
+                            <label class="custom-check">
+                                <input type="checkbox" id="agree-marketing" class="hidden-check">
+                                <span class="ico-check">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="circle"
+                                            d="M23.5 12C23.5 18.3513 18.3513 23.5 12 23.5C5.64873 23.5 0.5 18.3513 0.5 12C0.5 5.64873 5.64873 0.5 12 0.5C18.3513 0.5 23.5 5.64873 23.5 12Z"
+                                            stroke="#ddd" fill="#fff"></path>
+                                        <path class="v-line" d="M7 12.6667L10.3846 16L18 8.5" stroke="#ddd"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                                <span class="checkbox-text">마케팅 광고 활용을 위한 수집 및 이용 동의 (선택)</span>
+                            </label>
+                            <a href="#" class="view-link">약관보기 ></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="form-footer">
+                    <button type="submit" class="btn-submit">가입하기</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+/* ------------------------------기본 설정------------------------------ */
+.signup-container {
+  width: 100%;
+  max-width: 640px;
+  margin: 60px auto;
+  font-family: "Noto Sans KR", sans-serif;
+  color: var(--text-primary);
+}
+
+.signup-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.required-guide {
+  text-align: right;
+  font-size: 12px;
+  color: var(--text-secondary);
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--text-primary);
+}
+
+.ico-asterisk {
+  color: #ee6a7b;
+  margin-right: 2px;
+}
+
+/* 폼 그룹 레이아웃 */
+.form-group {
+  display: flex;
+  padding: 20px 0;
+  align-items: flex-start;
+}
+
+.form-group label {
+  width: 139px;
+  padding-top: 12px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.input-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-wrap input {
+  height: 44px;
+  width: 100%;
+  padding: 0 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.input-wrap input:focus {
+  border: 1px solid var(--text-primary);
+}
+
+/* 버튼 스타일 */
+.btn-outline {
+  width: 120px;
+  height: 44px;
+  border: 1px solid var(--main-purple);
+  color: var(--main-purple);
+  background: #fff;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-address {
+  width: 100%;
+  height: 44px;
+  border: 1px solid var(--main-purple);
+  color: var(--main-purple);
+  background: #fff;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+/* ------------------------------약관 동의------------------------------ */
+
+:root {
+  --border-light: #ddd;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid var(--text-primary);
+  margin: 20px 0;
+}
+
+.agreement-wrap {
+  flex: 1;
+}
+
+.check-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.custom-check {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.hidden-check {
+  display: none;
+}
+
+.ico-check {
+  display: inline-block;
+  margin-right: 12px;
+  line-height: 0;
+}
+
+.ico-check svg .circle {
+  fill: #fff;
+  stroke: var(--border-light);
+  transition: all 0.2s ease;
+}
+
+.ico-check svg .v-line {
+  stroke: var(--border-light);
+  transition: all 0.2s ease;
+}
+
+.hidden-check:checked + .ico-check svg .circle {
+  fill: var(--main-purple);
+  stroke: var(--main-purple);
+}
+
+.hidden-check:checked + .ico-check svg .v-line {
+  stroke: #fff;
+}
+
+.checkbox-text {
+  font-size: 14px;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.all-check {
+  flex-direction: column;
+  align-items: flex-start !important; /* 가로 정렬 해제 */
+  padding-bottom: 8px;
+  padding-top: 0;
+}
+
+.all-check .checkbox-text {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.sub-text {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  margin-top: 4px;
+  padding-left: 36px;
+}
+
+.view-link {
+  color: var(--main-purple);
+  text-decoration: none;
+  font-size: 14px;
+  white-space: nowrap;
+}
+/* ------------------------------하단 가입 버튼------------------------------ */
+.form-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.btn-submit {
+  width: 240px;
+  height: 56px;
+  background-color: var(--main-purple);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
