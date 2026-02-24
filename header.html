@@ -5,15 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="common.css">
-    <link rel="stylesheet" href="marketK_header.css">
+    <link rel="stylesheet" href="/css/marketK_header.css">
+
+    <script src="/js/header_jy.js" defer></script>
+    <script src="/js/header_seuil.js" defer></script>
+    <script src="/js/include.js" defer></script>
 </head>
 <body>
     <header>
         <div class="hd_first">
-            <ul>
+            <ul class="member">
                 <li><a href="#">회원가입</a></li>
                 <li><a href="#">로그인</a></li>
-                <li><a href="#">고객센터▼</a></li>
+                <li>
+                    <a href="#">고객센터▼</a>
+                    <ul class="customer">
+                        <li>
+                                <a href="#">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="#">자주하는질문</a>
+                            </li> 
+                            <li>
+                                <a href="#">1:1문의</a>
+                            </li> 
+                            <li>
+                                <a href="#">대량주문 문의</a>
+                            </li> 
+                    </ul>
+                    </li>                                 
             </ul>
         </div>
         <div class="hd_second">
@@ -49,6 +69,7 @@
             </div>
         </div>        
     </header>
+    <!----nav---->
     <nav>
         <div class="nav_left">
             <div class="hamberger_btn">
@@ -56,74 +77,416 @@
                 width="16" height="15.4" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0;"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V1.87083H0V0ZM0 6.768H16V8.63883H0V6.768ZM0 13.536H16V15.4068H0V13.536Z" fill="#333">
                 </path></svg>
             </div>
-            <p>카테고리</p>
-            <div>
-                <img src="" alt="">logo
-                <p>스킨케어</p>
-            </div>   
-            <div>
-                <img src="" alt="">logo
-                <p>메이크업</p>
-            </div>   
-            <div>
-                <img src="" alt="">logo
-                <p>클렌징</p>
-            </div>   
-            <div>
-                <img src="" alt="">logo
-                <p>선케어</p>
-            </div>   
-            <div>
-                <img src="" alt="">logo
-                <p>헤어케어</p>
-            </div>   
-            <div>
-                <img src="" alt="">logo
-                <p>바디케어</p>
-            </div>   
-            <div>
-                <img src="" alt="">logo
-                <p>구강위생용품</p>
-            </div>   
-            <div>
-                <img src="" alt="">logo
-                <p>더모 코스메틱</p>
-            </div>   
-            <div>
-                <img src="" alt="">logo
-                <p>향수디퓨저</p>
-            </div>   
-            <div>
-                <img src="" alt="">logo
-                <p>유아동</p>
-            </div>   
-            <div>
-                <img src="" alt="">logo
-                <p>남성</p>
-            </div>   
-            <div>
-                <img src="" alt="">logo
-                <p>스킨케어</p>
-            </div>   
-            <div>
-                <img src="" alt="">logo
-                <p>스킨케어</p>
-            </div>   
-            <div>
-                <img src="" alt="">logo
-                <p>스킨케어</p>
-            </div>   
-            <div>
-                <img src="" alt="">logo
-                <p>스킨케어</p>
-            </div>   
-            
+            <ul class="category_wrap">
+                <p class="category_title">카테고리</p>
+                <ul class="category">
+                    <li>
+                    <img src="https://collection-image.kurly.com/site-category-groups/37/aRDob8yu5CFhux7YLybjPE85PairtHExXhijv0yh.png" width="30px" height="30px">
+                    <p class="subcategory_title">스킨케어</p>
+                        <ul class="subcategory">
+                            <li>
+                                <a href="#">스킨/토너</a>
+                            </li>
+                            <li>
+                                <a href="#">로션</a>
+                            </li>
+                            <li>
+                                <a href="#">에센스/세럼/앰플</a>
+                            </li>
+                            <li>
+                                <a href="#">크림</a>
+                            </li>
+                            <li>
+                                <a href="#">아이크림</a>
+                            </li>
+                            <li>
+                                <a href="#">미스트</a>
+                            </li>
+                            <li>
+                                <a href="#">오일</a>
+                            </li>
+                            <li>
+                                <a href="#">마스크/팩</a>
+                            </li>
+                            <li>
+                                <a href="#">선물세트</a>
+                            </li>
+                            <li>
+                                <a href="#">피부고민</a>
+                            </li>
+                        </ul>
+                    </li>   
+                    <li>
+                    <img src="https://collection-image.kurly.com/site-category-groups/38/Dt5DmBpTMKcGSZ01mr74SQPCAZCulW12nWn0P5dc.png" width="30px" height="30px">
+                    <p class="subcategory_title">메이크업</p>
+                        <ul class="subcategory">
+                            <li>
+                                <a href="#">베이스 메이크업</a>
+                            </li>
+                            <li>
+                                <a href="#">블러셔/하이라이터/셰이딩</a>
+                            </li>
+                            <li>
+                                <a href="#">립 메이크업</a>
+                            </li>
+                            <li>
+                                <a href="#">네일/페디케어</a>
+                            </li>
+                            <li>
+                                <a href="#">아이 메이크업</a>
+                            </li>
+                        </ul>
+                    </li>   
+                    <li>
+                    <img src="https://collection-image.kurly.com/site-category-groups/39/aNjpBx964clJsB1aWP1sLmYGPfH6yKIcfnH9aS7Y.png" width="30px" height="30px">
+                    <p class="subcategory_title">클렌징</p>
+                        <ul class="subcategory">
+                            <li>
+                                <a href="#">밤/오일/크림</a>
+                            </li>
+                            <li>
+                                <a href="#">워터</a>
+                            </li>
+                            <li>
+                                <a href="#">폼/젤</a>
+                            </li>
+                            <li>
+                                <a href="#">티슈</a>
+                            </li>
+                            <li>
+                                <a href="#">립/아이리무버</a>
+                            </li>
+                            <li>
+                                <a href="#">스크럽/필링</a>
+                            </li>
+                        </ul>
+                    </li>  
+                    <li>
+                    <img src="https://collection-image.kurly.com/site-category-groups/40/UYWd3TmapFM05b0RK6FwoOxuoqGJLW29I6uqfO9f.png" width="30px" height="30px">
+                    <p class="subcategory_title">선케어</p>
+                        <ul class="subcategory">
+                            <li>
+                                <a href="#">선스틱</a>
+                            </li>
+                            <li>
+                                <a href="#">선쿠션</a>
+                            </li>
+                            <li>
+                                <a href="#">선크림</a>
+                            </li>
+                            <li>
+                                <a href="#">수딩/애프터선</a>
+                            </li>
+                            <li>
+                                <a href="#">선스프레이</a>
+                            </li>
+                            <li>
+                                <a href="#">선패치</a>
+                            </li>
+                        </ul>
+                    </li>  
+                    <li>
+                    <img src="https://collection-image.kurly.com/site-category-groups/41/JUjoEsQcKA9pvZx9a9Qwp1ZaGIqXvV6OG51t847o.png" width="30px" height="30px">
+                    <p class="subcategory_title">헤어케어</p>
+                        <ul class="subcategory">
+                            <li>
+                                <a href="#">샴푸</a>
+                            </li>
+                            <li>
+                                <a href="#">컨디셔너/린스</a>
+                            </li>
+                            <li>
+                                <a href="#">트리트먼트/헤어팩</a>
+                            </li>
+                            <li>
+                                <a href="#">에센스/오일</a>
+                            </li>
+                            <li>
+                                <a href="#">미스트</a>
+                            </li>
+                            <li>
+                                <a href="#">스케일링/헤어토닉</a>
+                            </li>
+                            <li>
+                                <a href="#">스타일링</a>
+                            </li>
+                            <li>
+                                <a href="#">염모제</a>
+                            </li>
+                        </ul>
+                    </li>   
+                    <li>
+                    <img src="https://collection-image.kurly.com/site-category-groups/42/5VehRJI1FWqP331IxwdrW0wR0x38ZOxpx3dd8Cz6.png" width="30px" height="30px">
+                    <p class="subcategory_title">바디케어</p>
+                        <ul class="subcategory">
+                            <li>
+                                <a href="#">워시</a>
+                            </li>
+                            <li>
+                                <a href="#">스크럽</a>
+                            </li>
+                            <li>
+                                <a href="#">로션/크림</a>
+                            </li>
+                            <li>
+                                <a href="#">미스트</a>
+                            </li>
+                            <li>
+                                <a href="#">오일</a>
+                            </li>
+                            <li>
+                                <a href="#">핸드케어</a>
+                            </li>
+                            <li>
+                                <a href="#">풋케어</a>
+                            </li>
+                            <li>
+                                <a href="#">립케어</a>
+                            </li>
+                            <li>
+                                <a href="#">제모/왁싱</a>
+                            </li>
+                            <li>
+                                <a href="#">기타</a>
+                            </li>
+                        </ul>
+                    </li>   
+                    <li>
+                    <img src="https://collection-image.kurly.com/site-category-groups/43/fFW1T3sAwg4I6cmP9Fp7QNsTDhzcA96i42Katfkv.png" width="30px" height="30px">
+                    <p class="subcategory_title">구강위생용품</p>
+                        <ul class="subcategory">
+                            <li>
+                                <a href="#">치약</a>
+                            </li>
+                            <li>
+                                <a href="#">칫솔/치실</a>
+                            </li>
+                            <li>
+                                <a href="#">구강청결용품</a>
+                            </li>
+                            <li>
+                                <a href="#">선물세트</a>
+                            </li>
+                            <li>
+                                <a href="#">여성위생용품</a>
+                            </li>
+                        </ul>  
+                    </li>   
+                    <li>
+                    <img src="https://collection-image.kurly.com/site-category-groups/99/MVfhfJ4WtkaCmZNCxcM7zqSoKZOjcqqdp7KGGrSI.png" width="30px" height="30px">
+                    <p class="subcategory_title">더모 코스메틱</p>
+                        <ul class="subcategory">
+                            <li>
+                                <a href="#">스킨케어</a>
+                            </li>
+                            <li>
+                                <a href="#">헤어케어</a>
+                            </li>
+                            <li>
+                                <a href="#">바디케어</a>
+                            </li>
+                            <li>
+                                <a href="#">클렌징</a>
+                            </li>
+                            <li>
+                                <a href="#">선케어</a>
+                            </li> 
+                            <li>
+                                <a href="#">유아케어</a>
+                            </li> 
+                            <li>
+                                <a href="#">기획세트</a>
+                            </li>
+                        </ul> 
+                    </li>   
+                    <li>
+                    <img src="https://collection-image.kurly.com/site-category-groups/44/1gShp3xZAxTZdONNFhAHpH8YsTFPBt3RJnTRY91F.png" width="30px" height="30px">
+                    <p class="subcategory_title">향수디퓨저</p>
+                        <ul class="subcategory">
+                            <li>
+                                <a href="#">향수</a>
+                            </li>
+                            <li>
+                                <a href="#">홈프레그런스</a>
+                            </li>
+                        </ul>
+                    </li>                    
+                    <li>
+                    <img src="https://collection-image.kurly.com/site-category-groups/45/GlgS9brN46exg0fm4hCkpFHXbOPslCmbtHeYA3si.png" width="30px" height="30px">
+                    <p class="subcategory_title">유아동</p>
+                        <ul class="subcategory">
+                            <li>
+                                <a href="#">스킨케어</a>
+                            </li>
+                            <li>
+                                <a href="#">헤어케어</a>
+                            </li>
+                            <li>
+                                <a href="#">바디케어</a>
+                            </li>
+                            <li>
+                                <a href="#">클렌징</a>
+                            </li>
+                            <li>
+                                <a href="#">선케어</a>
+                            </li> 
+                            <li>
+                                <a href="#">유아케어</a>
+                            </li> 
+                            <li>
+                                <a href="#">기획세트</a>
+                            </li>
+                        </ul> 
+                    </li>   
+                    <li>
+                    <img src="https://collection-image.kurly.com/site-category-groups/46/4gxtSNgx7LjGApXNJPBylp2jcNMwHSWgk0x1yELA.png" width="30px" height="30px">
+                    <p class="subcategory_title">남성</p>
+                        <ul class="subcategory">
+                            <li>
+                            <a href="#">스킨케어</a>
+                            </li>
+                            <li>
+                                <a href="#">메이크업</a>
+                            </li>
+                            <li>
+                                <a href="#">쉐이빙</a>
+                            </li>
+                            <li>
+                                <a href="#">바디케어</a>
+                            </li>
+                            <li>
+                                <a href="#">헤어케어</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                    <img src="https://collection-image.kurly.com/site-category-groups/48/nX7wyTwseyOsEbPDTQaNQG6G6F7YN3FVhEpRFaSD.png" width="30px" height="30px">
+                    <p class="subcategory_title">럭셔리뷰티</p>
+                        <ul class="subcategory">
+                            <li>
+                                <a href="#">스킨케어</a>
+                            </li>
+                            <li>
+                                <a href="#">메이크업</a>
+                            </li>
+                            <li>
+                                <a href="#">바디케어</a>
+                            </li>
+                            <li>
+                                <a href="#">헤어케어</a>
+                            </li>
+                            <li>
+                                <a href="#">프레그런스</a>
+                            </li>
+                            <li>
+                                <a href="#">클렌징</a>
+                            </li>
+                            <li>
+                                <a href="#">선케어</a>
+                            </li>
+                            <li>
+                                <a href="#">남성케어</a>
+                            </li>
+                            <li>
+                                <a href="#">탬버린즈</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                    <img src="https://collection-image.kurly.com/site-category-groups/47/Jl9YM6UT6RsJskeNTCr8Wj1zWIPP3sv5SjAXXSA0.png" width="25px" height="25px">
+                    <p class="subcategory_title">뷰티소품기기</p>
+                        <ul class="subcategory">
+                            <li>
+                                <a href="#">페이셜</a>
+                            </li>
+                            <li>
+                                <a href="#">메이크업</a>
+                            </li>
+                            <li>
+                                <a href="#">헤어</a>
+                            </li>
+                            <li>
+                                <a href="#">바디</a>
+                            </li> 
+                        </ul>
+                    </li>
+                    <li>
+                    <img src="https://collection-image.kurly.com/site-category-groups/49/80jBtd7UGQmpiZbHLcsiEogOLe6e7OfGZGaRFvZq.png" width="30px" height="30px">
+                    <p class="subcategory_title">뷰티 선물세트</p>
+                        <ul class="subcategory">
+                            <li>
+                                <a href="#">스몰럭셔리</a>
+                            </li>
+                            <li>
+                                <a href="#">감사선물</a>
+                            </li>
+                            <li>
+                                <a href="#">명품선물</a>
+                            </li>
+                            <li>
+                                <a href="#">가벼운선물</a>
+                            </li>                    
+                            <li>
+                                <a href="#">츨신벡일돌</a>
+                            </li>                    
+                            <li>
+                                <a href="#">향기선물</a>
+                            </li>  
+                        </ul>
+                    </li>
+                    <li>
+                    <img src="https://collection-image.kurly.com/site-category-groups/51/uqfH3oFyv2gpFs8HYaFVVJcJEHgib7mwq0y68cup.png" width="30px" height="30px">
+                    <p class="subcategory_title">건강식품</p>
+                        <ul class="subcategory">
+                            <li>
+                             <a href="#">영양제</a>
+                            </li>
+                            <li>
+                                <a href="#">비타민/미네랄</a>
+                            </li>
+                            <li>
+                                <a href="#">유산균</a>
+                            </li>
+                            <li>
+                                <a href="#">이너뷰티</a>
+                            </li>                    
+                            <li>
+                                <a href="#">프로틴</a>
+                            </li>                    
+                            <li>
+                                <a href="#">다이어트</a>
+                            </li>                    
+                            <li>
+                                <a href="#">건강즙</a>
+                            </li>         
+                        </ul>
+                    </li>
+                    <li>
+                    <img src="https://collection-image.kurly.com/site-category-groups/52/S9NA2Isua6I1Qly4WWajle0A6KyW725L9BW2MYGB.png" width="30px" height="30px">
+                    <p class="subcategory_title">라이프스타일</p>
+                        <ul class="subcategory">
+                            <li>
+                                <a href="#">건강용품/의약외품</a>
+                            </li>
+                            <li>
+                                <a href="#">반려용품/식품</a>
+                            </li>
+                            <li>
+                                <a href="#">공간방향/홈데코/제습</a>
+                            </li>
+                            <li>
+                                <a href="#">패션/잡화</a>
+                            </li>          
+                        </ul>
+                    </li>      
+                    </ul>
+                </ul>              
         </div>
         <ul class="nav_center">
-            <li><a href="#">베스트</a></li>
-            <li><a href="#">브랜드관</a></li>
-            <li><a href="#">신상</a></li>
-            <li><a href="#">특가/혜택</a></li>            
+            <li><a href="#"><span>베스트</span></a></li>
+            <li><a href="#"><span>브랜드관</span></a></li>
+            <li><a href="#"><span>신상</span></a></li>
+            <li><a href="#"><span>특가/혜택</span></a></li>            
         </ul>
         <ul class="nav_right">
             <li><a href="#">
@@ -131,6 +494,6 @@
                 <span>배송안내</span>
             </a></li>
         </ul>
-    </nav>    
+    </nav> 
 </body>
 </html>

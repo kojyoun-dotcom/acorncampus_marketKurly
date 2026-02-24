@@ -1,0 +1,16 @@
+.wrap{
+    width: 1050px;
+    /* height: 200px; */
+    /* border: 1px solid black; */
+    margin: 0 auto;
+}
+.wrap-img{
+    width: 1050px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 15px;
+}
+.wrap-img:hover{
+    cursor: pointer;
+}
