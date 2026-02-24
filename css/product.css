@@ -1,7 +1,22 @@
+
 main{
+
+}
+.container{
     width: 1050px;
-    height: 2840px;
-    display: ;
+    height: 977px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid red;
+    padding: 24px;
+    gap: 70px;
+    margin: 0 auto;
+}
+.left{
+    width: 430px;
+    height: 950px;
+    /* border: 1px solid black; */
 }
 .left-img{
     background-image: url(../images/main01.jpg);
@@ -9,4 +24,91 @@ main{
     background-size: cover;
     width: 430px; 
     height: 522px;
+    position: relative;
+    border-radius: 10px;
+}
+.coupon{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 79px;
+    height: 31px;
+    border-radius: 5px;
+    background-color: #bd76ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f2f2f2;
+}
+.plusImg{
+    background-image: url(../images/productPlus.png);
+    background-position: center;
+    background-size: cover;
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.right{
+    width: 559px;
+    height: 950px;
+    border: 1px solid black;
+}
+.brandBox{
+    width: 430px;
+    height: 69px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 10px;
+    position: relative;
+}
+.B-text{
+    padding: 5px 0;
+}
+.brand{
+    color: #8d4cc4;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+.brandName{
+    font-size: 18px;
+    font-weight: bold;
+}
+.btn{
+    margin-left: 5px;
+    display: inline-block;
+}
+.btn::after{
+    content: "❯";
+    font-size: 16px;
+    color: #333;
+    font-weight: normal;
+}
+.BoxHeart{
+    /* border: 1px solid black; */
+    margin-right: 10px;
+}
+.heartImg{
+    background-image: url(../images/heart.png.png);
+    background-position: center;
+    background-size: 100%;
+    width: 18px;
+    height: 18px;
+    margin-top: 5px; 
+}
+.likeNum{
+    position: absolute; 
+    bottom: 14px;
+    right: 17px;
+}
+.purple{
+    background-color: #F6EDFF;
+    width:178px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 5px;
 }
