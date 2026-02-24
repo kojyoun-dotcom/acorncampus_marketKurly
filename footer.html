@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="/css/marketK_footer.css">
 
+    <script src="/js/footer.js" defer></script>
+
 </head>
 <body>    
     <footer>
@@ -24,13 +26,22 @@
                     <p>월~토요일 | 오전 7시~오후 6시 <br>
                     일/공휴일 | 오전 7시~오후1시</p>
                 </div>
+
+                <div class="modal" id="modal">
+                    <div class="modal_content">
+                        <button class="closeBtn">확인</button>
+                        <h2>카카오톡 문의</h2>
+                        <p>카카오톡으로 이동하시겠습니까?</p>
+                    </div>
+                </div>
+
                 <div class="ft_button">
-                    <button>1:1문의</button>
+                    <button id="personal" onclick="personal()">1:1문의</button>
                     <p>365일 <br>
                     고객센터 운영시간에 순차적으로 답변드리겠습니다.</p>
                 </div>
                 <div class="ft_button">
-                    <button id="mass">대량주문문의</button>
+                    <button id="mass" onclick="mass()">대량주문문의</button>
                     <p>월~금요일 | 오전 9시~오후 6시 <br>
                     점심시간 | 낮12시~오후1시</p>
                 </div>    
@@ -41,8 +52,8 @@
             <div class="ft_med2">
                 <div class="ft_inner2">
                     <ul>
-                        <li><a href="#">회사소개</a></li>
-                        <li><a href="#">컬리소개영상</a></li>
+                        <li><a href="">회사소개</a></li>
+                        <li><a href="">컬리소개영상</a></li>
                         <li><a href="#">투자정보</a></li>
                         <li><a href="#">인재채용</a></li>
                         <li><a href="#">이용약관</a></li>
@@ -58,10 +69,10 @@
                         <p>팩스: 070-750-6098</p>
                     </div>
                     <ul class="social">
-                        <li><a href="#"><img src="https://res.kurly.com/pc/ico/1810/ico_instagram.png" alt="컬리 인스타그램 바로가기" width="30px" height="30px"></a></li>
-                        <li><a href="#"><img src="https://res.kurly.com/pc/ico/1810/ico_fb.png" alt="컬리 페이스북 바로가기" width="30px" height="30px"></a></li>
-                        <li><a href="#"><img src="https://res.kurly.com/pc/ico/1810/ico_blog.png" alt="컬리 네이버블로그 바로가기" width="30px" height="30px"></a></li>
-                        <li><a href="#"><img src="https://res.kurly.com/pc/ico/1810/ico_youtube.png" alt="컬리 유튜브 바로가기" width="30px" height="30px"></a></li>
+                        <li><a href="https://www.instagram.com/marketkurly"><img src="https://res.kurly.com/pc/ico/1810/ico_instagram.png" alt="컬리 인스타그램 바로가기" width="30px" height="30px"></a></li>
+                        <li><a href="https://www.facebook.com/Marketkurly/"><img src="https://res.kurly.com/pc/ico/1810/ico_fb.png" alt="컬리 페이스북 바로가기" width="30px" height="30px"></a></li>
+                        <li><a href="https://blog.naver.com/marketkurly"><img src="https://res.kurly.com/pc/ico/1810/ico_blog.png" alt="컬리 네이버블로그 바로가기" width="30px" height="30px"></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCfpdjL5pl-1qKT7Xp4UQzQg"><img src="https://res.kurly.com/pc/ico/1810/ico_youtube.png" alt="컬리 유튜브 바로가기" width="30px" height="30px"></a></li>
                     </ul>
                     </div>    
                 </div>
@@ -90,14 +101,5 @@
             <p>© KURLY CORP. ALL RIGHTS RESERVED</p>
         </div>
     </footer>
-    <script>
-        function popup( ){
-            alert("카카오톡으로 이동하시겠습니까?");
-        }
-
-        function mass(){
-            
-        }
-    </script>
 </body>
 </html>
