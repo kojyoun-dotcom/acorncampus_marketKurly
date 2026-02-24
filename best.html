@@ -4,10 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best</title>
-    <link rel="stylesheet" href="./common.css">
-    <link rel="stylesheet" href="./css/best.css">
 
-    <!-- 폰트 -->
+     <!-- 폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=East+Sea+Dokdo&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
@@ -15,14 +13,32 @@
     <!-- 장바구니 아이콘 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    
+        <!-- 공통 UI 로드 스크립트 -->
+    <link rel="stylesheet" href="./common.css">
+
+        <!-- 이 페이지 전용 스크립트 -->
+    <link rel="stylesheet" href="./css/best.css">
+   
+    <!-- 공통 js 스크립트 -->
+    <script src="/js/header_seuil.js" defer></script>
+    <script src="/js/header_jy.js" defer></script>
+    <script src="/js/footer.js" defer></script>
+    <script src="/js/include.js" defer></script>
+
+    <!-- 이 페이지 전용 js script -->
+     <script src="./js/best.js" defer></script>
+
   </head>
   <body>
+<!-- 헤더 영역 -->
+    <header id="header-placeholder"></header>
+
+
     <div class="best_box">
       <h2>뷰티컬리 베스트</h2>
       <div class="best_box_t">
         <ul>
-            <li><a href="#">TOP300</a></li>
+            <li ><a href="#"><span class="best_box_t_p">TOP300</span></a></li>
             <li><a href="#">스킨케어</a></li>
             <li><a href="#">럭셔리뷰티</a></li>
             <li><a href="#">선물하기좋은</a></li>
@@ -41,7 +57,7 @@
       <div class="best_filter">
         <div class="best_filter_t">
         <h3>필터</h3>
-        <div>초기화</div>
+        <div><button class="best_reset">초기화</button></div>
         </div>
         
         <div class="best_filter_box ">
@@ -50,12 +66,12 @@
                 <li>
                   <button class="best_btn">✓</button>
                   <span class="best_purple">Kurly Only</span>
-                  <span class="best_amt">443</span>
+                  <span class="best_grey">443</span>
                 </li>
                 <li>
                   <button class="best_btn">✓</button>
                   <span class="best_purple">신상품</span>
-                  <span class="best_amt">119</span>
+                  <span class="best_grey">119</span>
                 </li>
             </ul>
        
@@ -67,52 +83,52 @@
             <li>
                <button class="best_btn">✓</button>
                 스킨케어
-              <span class="best_amt">1552</span>
+              <span class="best_grey">1552</span>
             </li>
             <li>
                <button class="best_btn">✓</button>
                 럭셔리뷰티
-              <span class="best_amt">1279</span>
+              <span class="best_grey">1279</span>
             </li>
             <li>
                <button class="best_btn">✓</button>
                 바디케어
-              <span class="best_amt">1059</span>
+              <span class="best_grey">1059</span>
             </li>
             <li>
                <button class="best_btn">✓</button>
                 메이크업
-              <span class="best_amt">903</span>
+              <span class="best_grey">903</span>
             </li>
             <li>
                <button class="best_btn">✓</button>
                 헤어케어
-              <span class="best_amt">833</span>
+              <span class="best_grey">833</span>
             </li>
             <li>
                <button class="best_btn">✓</button>
                 클렌징
-              <span class="best_amt">435</span>
+              <span class="best_grey">435</span>
             </li>
             <li>
                <button class="best_btn">✓</button>
                 구강•위생용품
-              <span class="best_amt">422</span>
+              <span class="best_grey">422</span>
             </li>
             <li>
                <button class="best_btn">✓</button>
                 뷰티소품•기기
-              <span class="best_amt">410</span>
+              <span class="best_grey">410</span>
             </li>
             <li>
                <button class="best_btn">✓</button>
                 선케어
-              <span class="best_amt">272</span>
+              <span class="best_grey">272</span>
             </li>
             <li>
                <button class="best_btn">✓</button>
                 더모 코스메틱
-              <span class="best_amt">266</span>
+              <span class="best_grey">266</span>
             </li>
             <h4>카테고리 더보기 ></h4>
      
@@ -126,22 +142,22 @@
             <li>
                <button class="best_btn"></button>
                 11,500원 미만
-              <span class="best_amt">1499</span>
+              <span class="best_grey">1499</span>
             </li>
             <li>
                <button class="best_btn"></button>
                 11,500원 ~ 19,000원
-              <span class="best_amt">1528</span>
+              <span class="best_grey">1528</span>
             </li>
             <li>
                <button class="best_btn"></button>
                 19,000원 ~ 36,000원
-              <span class="best_amt">1492</span>
+              <span class="best_grey">1492</span>
             </li>
             <li>
                <button class="best_btn"></button>
                 36,000원 이상
-              <span class="best_amt">1538</span>
+              <span class="best_grey">1538</span>
             </li>
             <ul>
            </div>
@@ -180,52 +196,52 @@
               <li>
                <button class="best_btn">✓</button>
                 가그린
-              <span class="best_amt">4</span>
+              <span class="best_grey">4</span>
               </li>
               <li>
                <button class="best_btn">✓</button>
                 갸스비
-              <span class="best_amt">10</span>
+              <span class="best_grey">10</span>
               </li>
               <li>
                <button class="best_btn">✓</button>
                 검가드
-              <span class="best_amt">1</span>
+              <span class="best_grey">1</span>
               </li>
               <li>
                <button class="best_btn">✓</button>
                 구달
-              <span class="best_amt">24</span>
+              <span class="best_grey">24</span>
               </li>
               <li>
                <button class="best_btn">✓</button>
                 그란츠
-              <span class="best_amt">6</span>
+              <span class="best_grey">6</span>
               </li>
               <li>
                <button class="best_btn">✓</button>
                 그래비티
-              <span class="best_amt">9</span>
+              <span class="best_grey">9</span>
               </li>
               <li>
                <button class="best_btn">✓</button>
                 그린벨
-              <span class="best_amt">12</span>
+              <span class="best_grey">12</span>
               </li>
               <li>
                <button class="best_btn">✓</button>
                 그린핑거
-              <span class="best_amt">9</span>
+              <span class="best_grey">9</span>
               </li>
               <li>
                <button class="best_btn">✓</button>
                 글래드 호텔
-              <span class="best_amt">2</span>
+              <span class="best_grey">2</span>
               </li>
               <li>
                <button class="best_btn">✓</button>
                 글린트
-              <span class="best_amt">2</span>
+              <span class="best_grey">2</span>
               </li>
             </ul>
           </div>
@@ -238,22 +254,22 @@
               <li>
                <button class="best_btn">✓</button>
                 건성 피부
-              <span class="best_amt">104</span>
+              <span class="best_grey">104</span>
               </li>
               <li>
                <button class="best_btn">✓</button>
                 지성 피부
-              <span class="best_amt">55</span>
+              <span class="best_grey">55</span>
               </li>
               <li>
                <button class="best_btn">✓</button>
                복합성 피부
-              <span class="best_amt">72</span>
+              <span class="best_grey">72</span>
               </li>
               <li>
                <button class="best_btn">✓</button>
                민감성 피부
-              <span class="best_amt">103</span>
+              <span class="best_grey">103</span>
               </li>
             </ul>
           </div>
@@ -265,7 +281,7 @@
               <li>
                <button class="best_btn">✓</button>
                 Kurly Only
-              <span class="best_amt">443</span>
+              <span class="best_grey">443</span>
               </li>
             </ul>
           </div>
@@ -277,36 +293,36 @@
               <li>
                <button class="best_btn">✓</button>
                 건조 모발
-              <span class="best_amt">29</span>
+              <span class="best_grey">29</span>
               </li>
               <li>
                <button class="best_btn">✓</button>
                 손상 모발
-              <span class="best_amt">53</span>
+              <span class="best_grey">53</span>
               </li>
               <li>
                <button class="best_btn">✓</button>
                 민감성 두피
-              <span class="best_amt">18</span>
+              <span class="best_grey">18</span>
               </li>
               <li>
                <button class="best_btn">✓</button>
                 지루성 두피
-              <span class="best_amt">30</span>
+              <span class="best_grey">30</span>
               </li>
               <li>
                <button class="best_btn">✓</button>
                 탈모
-              <span class="best_amt">19</span>
+              <span class="best_grey">19</span>
               </li>
               <li>
                <button class="best_btn">✓</button>
                 볼륨 부족
-              <span class="best_amt">19</span>
+              <span class="best_grey">19</span>
               <li>
                <button class="best_btn">✓</button>
                 염색유지/새치
-              <span class="best_amt">5</span>
+              <span class="best_grey">5</span>
               </li>
             </ul>
             </div>
@@ -318,17 +334,17 @@
               <li>
                <button class="best_btn">✓</button>
                 할인상품
-              <span class="best_amt">5506</span>
+              <span class="best_grey">5506</span>
               </li>
               <li>
                <button class="best_btn">✓</button>
                 한정수량
-              <span class="best_amt">1</span>
+              <span class="best_grey">1</span>
               </li>
               <li>
                <button class="best_btn">✓</button>
                단독특가
-              <span class="best_amt">2</span>
+              <span class="best_grey">2</span>
               </li>
                 </ul>
           </div>
@@ -339,7 +355,7 @@
             <li>
                <button class="best_btn">✓</button>
                신상품
-              <span class="best_amt">119</span>
+              <span class="best_grey">119</span>
               </li>
           </ul>
         </div>
@@ -349,12 +365,12 @@
             <li>
                <button class="best_btn">✓</button>
               상온
-              <span class="best_amt">6059</span>
+              <span class="best_grey">6059</span>
               </li>
               <li>
                <button class="best_btn">✓</button>
                냉장
-              <span class="best_amt">3</span>
+              <span class="best_grey">3</span>
               </li>
           </ul>
         </div>
@@ -364,12 +380,12 @@
             <li>
                <button class="best_btn">✓</button>
               샛별배송
-              <span class="best_amt">6057</span>
+              <span class="best_grey">6057</span>
               </li>
               <li>
                <button class="best_btn">✓</button>
                판매자배송
-              <span class="best_amt">5</span>
+              <span class="best_grey">5</span>
               </li>
           </ul>
         </div>
@@ -379,7 +395,7 @@
             <li>
                <button class="best_btn">✓</button>
                멤버스혜택
-              <span class="best_amt">1</span>
+              <span class="best_grey">1</span>
               </li>
           </ul>
         </div>
@@ -389,7 +405,7 @@
             <li>
                <button class="best_btn">✓</button>
                반려동물 상품
-              <span class="best_amt">2</span>
+              <span class="best_grey">2</span>
               </li>
           </ul>
         </div>
@@ -416,182 +432,184 @@
           <ul>
             <li>
               <a href="#"><img src="./images/best.images/best_01.jpg" alt=""></a>
-              <div class="best_cart">담기</div>
+              <div class="best_cart">🛒담기</div>
               <div class="best_items_c">
                 <p class="best_p1">샛별배송</p>
                 <p class="best_p2">[닥터브로너스] 퓨어 캐스틸 솝 950ml 12종 (택1)</p>
                 <p class="best_p3">100년 넘게 사랑받는 유기농 클렌저</p>
                 <p class="best_p4">35,000원</p>
                 <p class="best_p5"><span class="best_red">10%</span> 31,500원</p>
-                <div class="review"></div>
+                <div class=" best_review"><span class="best_grey">💬 9,999+</span></div>
               </div>
             </li>
             <li>
               <a href="#"><img src="./images/best.images/best_02.jpg" alt=""></a>
-              <div class="best_cart">담기</div>
+              <div class="best_cart">🛒담기</div>
               <div class="best_items_c">
                 <p class="best_p1">샛별배송</p>
                 <p class="best_p2">[켄트] 클래식/콤팩트/탄 초극세모 칫솔 4개입 세트 3종 (택1)</p>
                 <p class="best_p3"></p>
                 <p class="best_p4">18,000원</p>
                 <p class="best_p5"><span class="best_red">28%</span> 12,800원</p>
-                <div class="review"></div>
+                <div class="best_review"><span class="best_grey">💬 999+</span></div>
               </div>
             </li>
             <li>
               <a href="#"><img src="./images/best.images/best_03.jpg" alt=""></a>
-              <div class="best_cart">담기</div>
+              <div class="best_coupon cp1" > 10% 쿠폰+증정 </div>
+              <div class="best_cart">🛒담기</div>
               <div class="best_items_c">
                 <p class="best_p1">샛별배송</p>
                 <p class="best_p2">[에스트라] 아토벨어365 크림 80ml 2개 세트 (+크림 30ml + 로션 30ml ...</p>
                 <p class="best_p3">넉넉하게 꾸린 2세대 고보습 크림</p>
                 <p class="best_p4">66,000원</p>
                 <p class="best_p5"><span class="best_red">22%</span> 51,480원</p>
-                <div class="review"></div>
+                <div class="best_review"><span class="best_grey">💬 999+</span></div>
               </div>
             </li>
             <li>
               <a href="#"><img src="./images/best.images/best_04.jpg" alt=""></a>
-              <div class="best_cart">담기</div>
+               <div class="best_coupon cp1" > 10% 쿠폰+증정 </div>
+              <div class="best_cart">🛒담기</div>
               <div class="best_items_c">
                 <p class="best_p1">샛별배송</p>
                 <p class="best_p2">[헤라] New 블랙 쿠션 파운데이션 (+리필 포함) 7종 (택1)</p>
                 <p class="best_p3">얇게 발리는 초밀착 커버 쿠션</p>
                 <p class="best_p4">74,000원</p>
                 <p class="best_p5"><span class="best_red">19%</span> 59,940원</p>
-                <div class="review"></div>
+                <div class="best_review"><span class="best_grey">💬 999+</span></div>
               </div>
             </li>
             <li>
               <a href="#"><img src="./images/best.images/best_05.jpg" alt=""></a>
-              <div class="best_cart">담기</div>
+              <div class="best_cart">🛒담기</div>
               <div class="best_items_c">
                 <p class="best_p1">샛별배송</p>
                 <p class="best_p2">[온더바디] 발을씻자 코튼풋샴푸 9종 (택1)</p>
                 <p class="best_p3">상쾌하고 뽀송한 발을 위한 필수템</p>
                 <p class="best_p4">11,900원</p>
                 <p class="best_p5"><span class="best_red">50%</span> 5,900원</p>
-                <div class="review"></div>
+                <div class="best_review"><span class="best_grey">💬 9,999+</span></div>
               </div>
             </li>
             <li>
               <a href="#"><img src="./images/best.images/best_06.jpg" alt=""></a>
-              <div class="best_cart">담기</div>
+              <div class="best_cart">🛒담기</div>
               <div class="best_items_c">
                 <p class="best_p1">샛별배송</p>
                 <p class="best_p2">[조말론] NEW 핸드크림 30ml 6종 (택1)(선물박스 포함)</p>
                 <p class="best_p3">100년 넘게 사랑받는 유기농 클렌저</p>
                 <p class="best_p4">35,000원</p>
                 <p class="best_p5"><span class="best_red">10%</span> 31,500원</p>
-                <div class="review"></div>
+                <div class="best_review"><span class="best_grey">💬 965</span></div>
               </div>
             </li>
             <li>
               <a href="#"><img src="./images/best.images/best_07.jpg" alt=""></a>
-              <div class="best_cart">담기</div>
+              <div class="best_cart">🛒담기</div>
               <div class="best_items_c">
                 <p class="best_p1">샛별배송</p>
                 <p class="best_p2">[에스트라] 1+1 단독 리제덤 365 탄련속광 캡슐세럼 리필 기획세트 (본품 30...</p>
                 <p class="best_p3">모공 탄력 케어 세럼 단독 세트</p>
                 <p class="best_p4">35,000원</p>
                 <p class="best_p5"><span class="best_red">10%</span> 31,500원</p>
-                <div class="review"></div>
+                <div class="best_review"><span class="best_grey">💬 999+</span></div>
               </div>
             </li>
             <li>
               <a href="#"><img src="./images/best.images/best_08.jpg" alt=""></a>
-              <div class="best_cart">담기</div>
+              <div class="best_cart">🛒담기</div>
               <div class="best_items_c">
                 <p class="best_p1">샛별배송</p>
                 <p class="best_p2">[설화수] New 자음 2종 세트 (자음수EX150ml, 자음유액EX125ml)</p>
                 <p class="best_p3">맑고 촉촉한 피부를 가꾸는 세트 (+쇼핑백 선택 가능)</p>
                 <p class="best_p4">150,000원</p>
                 <p class="best_p5"><span class="best_red">19%</span> 121,500원</p>
-                <div class="review"></div>
+                <div class="best_review"><span class="best_grey">💬 299</span></div>
               </div>
             </li>
             <li>
               <a href="#"><img src="./images/best.images/best_09.jpg" alt=""></a>
-              <div class="best_cart">담기</div>
+              <div class="best_cart">🛒담기</div>
               <div class="best_items_c">
                 <p class="best_p1">샛별배송</p>
                 <p class="best_p2">[에뛰드] 왓츠인마이아이즈 33종(택1)</p>
                 <p class="best_p3">한 톤, 반 톤 컬러의 온도 편차</p>
                 <p class="best_p4">6,000원</p>
                 <p class="best_p5"><span class="best_red">25%</span> 4,500원~</p>
-                <div class="review"></div>
+                <div class="best_review"><span class="best_grey">💬 687</span></div>
               </div>
             </li>
             <li>
               <a href="#"><img src="./images/best.images/best_10.jpg" alt=""></a>
-              <div class="best_cart">담기</div>
+              <div class="best_cart">🛒담기</div>
               <div class="best_items_c">
                 <p class="best_p1">샛별배송</p>
               <p class="best_p2">[산타마리아노벨라] 바뇨쉬우마 라이트 패키지 (바디워시) 7종 (택1)_쇼핑백...</p>
                 <p class="best_p3">샤워 내내 번지는 감각적인 향기</p>
                 <p class="best_p4">62,000원</p>
                 <p class="best_p5"><span class="best_red">5%</span> 58,900원~</p>
-                <div class="review"></div>
+                <div class="best_review"><span class="best_grey">💬 999+</span></div>
               </div>
             </li>
             <li>
               <a href="#"><img src="./images/best.images/best_11.png" alt=""></a>
-              <div class="best_cart">담기</div>
+              <div class="best_cart">🛒담기</div>
               <div class="best_items_c">
                 <p class="best_p1">샛별배송</p>
                <p class="best_p2">[클리오] (NEW컬러) 샤프 쏘 심플 워터프루프 펜슬 라이너 11종 (택1)</p>
                 <p class="best_p3">뷰티컬리 1위 아이라이너, 섬세하고 슬림한 멀티 라이팅</p>
                 <p class="best_p4">11,000원</p>
                 <p class="best_p5"><span class="best_red">10%</span> 9,900원</p>
-                <div class="review"></div>
+                <div class="best_review"><span class="best_grey">💬 502</span></div>
               </div>
             </li>
             <li>
               <a href="#"><img src="./images/best.images/best_12.jpg" alt=""></a>
-              <div class="best_cart">담기</div>
+              <div class="best_cart">🛒담기</div>
               <div class="best_items_c">
                 <p class="best_p1">샛별배송</p>
                 <p class="best_p2">[프레시안] 에그라이크 크림 블러수 10종 (택1)</p>
                 <p class="best_p3">메이크업 아티스트 공동개발 블러쉬</p>
                 <p class="best_p4">23,000원</p>
                 <p class="best_p5"><span class="best_red">5%</span> 21,850원</p>
-                <div class="review"></div>
+                <div class="best_review"><span class="best_grey">💬 348</span></div>
               </div>
             </li>
             <li>
               <a href="#"><img src="./images/best.images/best_13.jpg" alt=""></a>
-              <div class="best_cart">담기</div>
+              <div class="best_cart">🛒담기</div>
               <div class="best_items_c">
                 <p class="best_p1">샛별배송</p>
                 <p class="best_p2">[맥] NEW 파우더 키스 헤이지 매트 립스틱 17종 (택1)</p>
                 <p class="best_p3">더 가벼운 텍스쳐로 돌아온, 촉촉하게 완성하는 블러립</p>
                 <p class="best_p4">42,000원</p>
                 <p class="best_p5"><span class="best_red">19%</span> 34,020원</p>
-                <div class="review"></div>
+                <div class="best_review"><span class="best_grey">💬 999+</span></div>
               </div>
             </li>
             <li>
               <a href="#"><img src="./images/best.images/best_14.jpg" alt=""></a>
-              <div class="best_cart">담기</div>
+              <div class="best_cart">🛒담기</div>
               <div class="best_items_c">
                 <p class="best_p1">샛별배송</p>
                 <p class="best_p2">[바비 브라운] 엑스트라 립 틴티드 밤 15종 (택1)</p>
                 <p class="best_p3">더 촉촉하게 업그레이드된 베스트 립밤</p>
                 <p class="best_p4">49,000원</p>
                 <p class="best_p5"><span class="best_red">15%</span> 41,650원</p>
-                <div class="review"></div>
+                <div class="best_review"><span class="best_grey">💬 999+</span></div>
               </div>
             </li>
             <li>
               <a href="#"><img src="./images/best.images/best_15.jpg" alt=""></a>
-              <div class="best_cart">담기</div>
+              <div class="best_cart">🛒담기</div>
               <div class="best_items_c">
                 <p class="best_p1">샛별배송</p>
                 <p class="best_p2">[아워글래스] 팬텀 볼류마이징 글로시 밤 1.7g 20종</p>
                 <p class="best_p3">맑게 빛나는 유리알 광택</p>
                 <p class="best_p4">56,000원</p>
                 <p class="best_p5"><span class="best_red">15%</span> 47,600원</p>
-                <div class="review"></div>
+                <div class="best_review"><span class="best_grey">💬 999+</span></div>
               </div>
             </li>
           </ul>
@@ -600,7 +618,15 @@
     </div>
 
 
+    <!-- 쿠폰증정  -->
+
+    <div class="best_coupon cp1" > 10% 쿠폰+증정 </div>
+    <br>
+    <div class="best_coupon cp2"> 5% 쿠폰+증정 </div>
+    <div class="best_coupon cp3" > 증정이벤트 </div>
+
    
-    <script src="./js/best.js"></script>
+     <!-- 푸터 영역 -->
+    <footer id="footer-placeholder"></footer>
   </body>
 </html>

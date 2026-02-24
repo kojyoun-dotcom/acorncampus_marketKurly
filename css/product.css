@@ -105,10 +105,173 @@ main{
     bottom: 14px;
     right: 17px;
 }
-.purple{
+.firstLine{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.crown{
+   /* border: 1px solid red; */
     background-color: #F6EDFF;
     width:178px;
     height: 30px;
     border-radius: 10px;
     padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #8d4cc4;
+    cursor: pointer;
+}
+.crownText a{
+    padding: 10px;
+}
+.secondLine{
+    display: flex;
+    margin: 10px 0;
+    gap: 10px;
+}
+.secondText1{
+    border-right: 1px solid gray;
+    padding-right: 10px;
+}
+[class^=secondText]{
+    color: gray;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.thirdLine{
+    display: flex;
+    position: relative;
+    margin: 20px 0;
+}
+.titleText{
+    /* border: 1px solid red; */
+    width: 440px;
+    height: 108px;
+    flex-wrap: wrap;
+    font-size: 28px;
+    line-height: 37px;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+.shareImg{
+    background-image: url(../images/share_icon.png);
+    background-position: center;
+    background-size: cover;
+    width:22px;
+    height: 30px;
+    right: 0;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+.subText{
+    font-size: 18px;
+    color: gray;
+    font-weight: 500;
+}
+.forthLine, .fifthLine{
+    display: flex;
+    gap: 10px;
+}
+.forthLine{
+    margin-bottom: 5px;
+}
+.rate, .salePrice{
+    font-size: 27px;
+    font-weight: 800;
+}
+.rate{
+    color: #FA622F;
+}
+.realPrice{
+    color: gray;
+}
+.fifthLine > .rate{
+    color: #8d4cc4;
+}
+.fifthBox1{
+    width: 200px;
+    border: 1px solid black;
+    display: flex;
+    align-items: baseline; /*글자 아래 기준선에 맞춰서 정렬*/
+    gap: 5px;
+    margin-bottom: 2px;
+}
+.fifthLine {
+    display: flex;
+}
+.fifthLine .rate {
+    color: #8d4cc4;
+}
+.fifthLine .salePrice {
+    color: #8d4cc4;
+    font-size: 27px;
+    font-weight: 800;
+}
+.infoImg::after {
+    content: "!";
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 14px;
+    height: 14px;
+    background-color: #d1b2ff;
+    color: white;
+    font-size: 10px;
+    border-radius: 50%;
+    margin-left: 2px;
+}
+.firstPurchase {
+    color: #8d4cc4;
+    font-size: 13px;
+    font-weight: bold;
+}
+.firstPurchase::after {
+    content: " ∨"; /* 화살표 추가 */
+    font-size: 10px;
+}
+.sixthLine {
+    width: 400px;
+    height: 45px;
+    border: 1px solid #a571cf;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: #F6EDFF;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    font-size: 15px;
+    font-weight: bold;
+    color: #333; 
+}
+
+.sixthText {
+    display: flex;
+    align-items: center; 
+}
+.next::after {
+    content: ">";
+    margin-left: 8px; 
+    font-size: 14px;  
+    color: #8d4cc4;   
+    display: inline-block;
+    margin-top: 2px;
+}
+.seventhLine {
+    width: 400px;
+    height: 45px;
+    border: 1px solid #8d4cc4;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    font-size: 15px;
+    font-weight: bold;
+    color: #672091; 
+    
 }

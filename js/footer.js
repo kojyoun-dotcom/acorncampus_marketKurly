@@ -17,6 +17,7 @@ function initializeFooter() {
     // 모달의 '확인' 버튼 클릭 시 모달 닫기
     closeBtn.addEventListener("click", function () {
         modal.classList.remove("active");
+        window.open("https://accounts.kakao.com/login/?continue=https%3A%2F%2Fpf.kakao.com%2F_xcSDxjxl%2Fchat#login", "_blank");
     });
 
     // 모달 바깥 영역 클릭 시 닫기
@@ -28,7 +29,8 @@ function initializeFooter() {
 
     // '1:1 문의' 버튼 클릭 이벤트
     personalBtn.addEventListener("click", () => {
-        alert("1:1 문의 페이지로 이동합니다. (구현 필요)");
+        // alert("1:1 문의 페이지로 이동합니다. (구현 필요)");
+        window.open("login.html", "_blank");
     });
 
     // '대량주문 문의' 버튼 클릭 시 구글 폼으로 이동 (새 탭에서 열기)
