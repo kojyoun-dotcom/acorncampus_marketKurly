@@ -1,4 +1,4 @@
-const openBtn = document.getElementById("kakao");
+        const openBtn = document.getElementById("kakao");
         const modal = document.getElementById("modal");
         const closeBtn = document.querySelector(".closeBtn");
 

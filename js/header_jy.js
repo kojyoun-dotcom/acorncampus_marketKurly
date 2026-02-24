@@ -30,3 +30,23 @@
                 currentMenu.classList.toggle("active");
             });
         });
+
+        //js 쓸 것인가!
+        const openBtn = document.getElementById("submit");
+        const modal = document.getElementById("modal");
+        const closeBtn = document.querySelector(".closeBtn");
+
+        openBtn.addEventListener("click", function() {
+            modal.classList.add("active");
+        });
+
+        closeBtn.addEventListener("click", function() {
+            modal.classList.remove("active");
+        });
+
+        // 바깥 영역 클릭 시 닫기
+        modal.addEventListener("click", function(e) {
+            if (e.target === modal) {
+                modal.classList.remove("active");
+            }
+        });
