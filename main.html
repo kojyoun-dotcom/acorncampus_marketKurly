@@ -1,103 +1,257 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>main</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/marketK_header.css" />
+    <link rel="stylesheet" href="css/marketK_footer.css">
+
 
     <script src="/js/header_seuil.js"></script>
     <script src="/js/include.js"></script>
 
     <script src="/js/main.js" defer></script>
-</head>
-<body>
-    <body>
-        <div class="mainHeader">
-            <div class="container">
-                <div class="mainBox">
-                    <img name=mainImg src="./images/mainHeader01.png" alt="">
-                </div>
-                <div class="mainBox">
-                    <img name=mainImg src="./images/mainHeader02.png" alt="">
-                </div>
-                <div class="mainBox">
-                    <img name=mainImg src="./images/mainHeader03.jpg" alt="">
-                </div>
-                <div class="mainBox">
-                    <img name=mainImg src="./images/mainHeader04.png" alt="">
-                </div>
-                <div class="mainBox">
-                    <img name=mainImg src="./images/mainHeader05.png" alt="">
-                </div>
-                <div class="mainBox">
-                    <img name=mainImg src="./images/mainHeader06.png" alt="">
-                </div>
-                <div class="mainBox">
-                    <img name=mainImg src="./images/mainHeader07.jpg" alt="">
-                </div>
-                <div class="mainBox">
-                    <img name=mainImg src="./images/mainHeader08.png" alt="">
-                </div>
-                <div class="mainBox">
-                    <img name=mainImg src="./images/mainHeader09.png" alt="">
-                </div>
-                <div class="mainBox">
-                    <img name=mainImg src="./images/mainHeader10.jpg" alt="">
-                </div>
-                <div class="mainBox">
-                    <img name=mainImg src="./images/mainHeader11.png" alt="">
-                </div>
-                <div class="mainBox">
-                    <img name=mainImg src="./images/mainHeader12.png" alt="">
-                </div>
-                <div class="mainBox">
-                    <img name=mainImg src="./images/mainHeader13.jpg" alt="">
-                </div>
+  </head>
+  <body>
+
+    <!-- header 시작 -->
+     <header id="header-placeholder">
+        <div class="hd_first">
+            <ul>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">고객센터▼</a></li>
+            </ul>
+        </div>
+        <div class="hd_second">
+            <div class="logos">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODIiIGhlaWdodD0iNDIiIHZpZXdCb3g9IjAgMCA4MiA0MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGwtcnVsZT0ibm9uemVybyIgZmlsbD0ibm9uZSI+CiAgICAgICAgPHBhdGggZD0iTTAgMGg4MnY0MkgweiIvPgogICAgICAgIDxwYXRoIGQ9Ik02Mi41Ljk2NWMxLjAyNi0uNTU3IDIuNDY2LS43MTggMy4zNTYuMTA3Ljg5LjgyNS42NzYgMi4wNDggMCAzLjk3MyAwIDAtMS41MDUgNC4wNjYtMy4wNTUgOC4yNjJsLS4zOTggMS4wOGMtMS40MTQgMy44My0yLjc2MiA3LjQ4Ny0yLjkyNyA3Ljk2My0xLjQ5OCA0LjI0NSAxLjk2NyA0LjEyMiA0LjAyNC0uMTUyIDEuMTU5LTIuMzk0IDIuNjQ0LTYuMzU3IDIuNjQ0LTYuMzU3LjUyNC0xLjU2My42ODItMi41MDQuMzU5LTIuODI4LS4xMDctLjExMy4wNDUtLjI1Mi4xOC0uMzIzIDIuMjY5LTEuMTQ5IDQuNjMtLjA3MiAzLjMzNiAzLjMxbC0uMDU0LjEzOGMtLjM4Ny45NzgtMi42OCA2LjczMy0yLjY4IDYuNzMzLS42NzYgMS42Ni0uNTk1IDMuMjM2LjQxOCAzLjIzNi42ODYtLjAwNCAxLjQ2LS4zODUgMi4zMDQtMS4wODggMS44MTgtMS41MDQgMy4yMjItNC4zMTIgMy43MjctNS40NTQuMjMtLjUwOCAxLjA4Ny0yLjQyIDEuNzY2LTQuMzYxLjIzNi0uNjY1LjM2OS0xLjM2LjM5NS0yLjA2NWEuNDQzLjQ0MyAwIDAgMSAuMTk0LS40NTkgMy41NzggMy41NzggMCAwIDEgMS42Ny0uNDIgMS44MDUgMS44MDUgMCAwIDEgMS40NjUuNzA1Yy40NDMuNTk4LjU2NiAxLjU3OS4xMDMgMi44MDgtLjEyLjMyLTMuNzc1IDkuOTU4LTMuNzc1IDkuOTU4di4wMjZjMi4wNDEtMS4yMjMgMy44Ny0xLjMxMyA0Ljk1My0uODU0bC0uMDAzLS4wMTNjMS40OTUuNjQ3IDEuOTkgMi40NC45MzggMy41NTktLjEwMy4xMS0uMzYyLjA4NC0uMzYyLS4wOS0uMDk0LTEuMjUzLTIuNTE3LTMuNDk1LTYuMTA5LTEuMDc1bC0uMTQ1LjM4NS0xLjA2OCAyLjgwOGMtMi42MiA3LjAxOC01LjQwMyAxMi4xMzYtOS40MTUgMTEtMi42ODgtLjc2LTIuMzc3LTQuNjA3LjUxNS03Ljc5YTU0LjkgNTQuOSAwIDAgMSA2LjQ5LTUuODk4Yy4wNjgtLjE4OC4xMy0uMzUuMTg4LS41MTEuMjc4LS43OC40OTEtMS40MzQuNzkyLTIuMjY1bC4xNTktLjUxOGMtLjE3OC4yLS40OTguNTczLS43MTIuODEyLS43MTIuOC0yLjQ5NCAyLjc1Ny01LjMyOSAyLjIwN2wtLjIzNC0uMDUyYy0yLjA1LS41MDgtMi42MDgtMS45ODYtMi42NTUtMy4yNzctMi4xNDIgMi42NTYtNC4zNTEgMy40MjYtNS44MDcgMy4zOS0xLjk0OC0uMDQ4LTMuMzc4LTEuNTE0LTIuNDI3LTQuMjkgMS4wNTgtMy4xMDYgNS41LTE1LjMzMiA2Ljc5NS0xOSAuNDg1LTEuNTguNjY2LTIuNTguMTg0LTIuOTc0LS4xMjMtLjEwMy4wNTItLjI2NS4yLS4zNDZ6bTguMzY0IDI4Ljc3OGMtMS4xMDMuODgtNS41MjYgNC41My02Ljc1MiA3LjQ0MS0uNTA1IDEuMTk3LS4zNzYgMi4xNDkuNDg4IDIuMjMzIDEuOTYuMTk0IDQuMDEyLTMuODE4IDYuMjI4LTkuNTEyek0xNi4wMjggNS4zNTJjLS4wODcuMzMyLTEuMzE5IDMuODYtMi43MDEgNy43NDlsLS4yMDkuNTg2LS4yMS41ODktLjIxNS42MDRjNC42OTEtMS4xMjMgMTMuMDY0LTYuNTcgMTQuMDM1LTEwLjA4NS4xMi0uMTYxLjI5LS4yMi41NjYtLjAzNS40OTUuMzMuNjg2IDEuMTU1LjQ5NSAxLjkxOC0uNzY0IDMuMDM4LTYuNDE2IDcuMzQxLTExLjM3OSA5LjU1NC42MTIgMS42MzcgMi42ODIgNi4yNjcgNC4yMDYgOS4xMTEgMS42NjMgMy4xMTkgMy40MiA0LjU3NSA2LjE0NyA0LjczNyAxLjQ2LjA4NSAzLjAxNC0uNDQ3IDMuODkzLTEuMjJsLjE0OC0uMTQtLjAxMy4wM2MuMTk0LS4yMDQuNTExLjA3Ny4zNjYuMzIzYTYuNSA2LjUgMCAwIDEtNC45OTIgMi44NjdjLTYuMzQ1LjQyNy04Ljc3NC0zLjg3LTEzLjMwNC0xNC40OTQtLjM2Ni4xMjYtLjgwOS4yODgtMS4yNTUuNDUtLjA3NS4xODctMi4wNyA1LjY0Mi0yLjEzIDUuODIzLS45NDQgMi44Ny0xLjAwNSA0LjQ0Mi0uMzU4IDQuODk1LjE0NS4wOS4wNzQuMzMzLS4xNzguNDE0LTIuNTI3Ljc5Ni00Ljg1My0uNjk2LTMuNTU5LTQuNDQyIDEuMTYxLTMuMzE2IDUuNjktMTYuMTggNi45MTQtMTkuNjI2LjQyNy0xLjI5NC4xOTctMi4xMjUtLjQ5Mi0yLjMwNkM4LjUwNiAxLjc4Ljg3NyA4Ljc0OSAxLjk3MSAxNS4xODRjLjE5IDEuMTIuOTggMS43NDcgMS4zNzggMS42NjNhLjEzMy4xMzMgMCAwIDEgLjE1Ni4xNTkgMS41MDggMS41MDggMCAwIDEtMS44NDUgMS4wMzJDLjQ5IDE3Ljc4Mi4xMDcgMTYuNTI3LjA0MyAxNS44OC0uNjAxIDkuMjIgNi4xNDggMS4yMyAxMi4zODkuNThjMi4zNzgtLjI1IDQuNjEuOTYgMy42NCA0Ljc3MnptMjQuMDQgOS45MTMtLjA2LjIwNy0yLjgzIDguMTZjLS4zMDQuODUtLjEgMS43MzcuNTAxIDEuOTAyIDEuNzU3LjQ4MiA0LjAyOC0yLjE0NSA1LjEzMS00LjczM2E2Ny43OTQgNjcuNzk0IDAgMCAwIDEuNDc2LTMuODE1Yy41ODItMS42NDMgMS4xMDYtMy4xODMuNzgzLTMuOTA4LS4wNzUtLjE2OC4wNDUtLjI1Ni4yMjMtLjM1LjUwNS0uMjU1IDIuMjI2LS44MjUgMy4xNDEuMDY4LjY5NS42NzQuNjA5IDEuNzcxLS4wMyAzLjQzN2wtLjA5Ni4yNDIuMjItLjI3M2MyLjcwMy0zLjMgNC43OTItNC4yOTIgNi41NjMtMy41OTdsLjE0Ny4wNjJjMi4zODEgMS4wNzQgMS4xNDYgNS4yMTUtMi4xMTYgNS40OC0uMi4wMTctLjM1Ni0uMTI2LS4xNTgtLjQwNy4zOTUtLjYwNS4zNTYtMS45MDktLjc5Ni0yLjAyMi0xLjE1Mi0uMTEzLTIuODMgMS4yMDctNC4wMzggMi44NDQtMS4wODQgMS40NS0yLjIgMy45MTEtMy4zMjIgNy4yNzMtLjI3Mi44MTgtLjE0MyAxLjAxMi0uMTEgMS4wNjdhLjEuMSAwIDAgMSAwIC4wOTRjLS4xNDMuMjcyLS45NjUuNTk2LTEuNzYuNTk2LTEuNjI1LS4wMDctMi4yOTEtLjk0NS0xLjk2Ny0yLjQzNy0xLjg0OCAxLjc2NC0zLjcxMSAyLjYxNC01LjM1NSAyLjQ2NmEyLjUyNCAyLjUyNCAwIDAgMS0yLjIzNi0zLjEwM2MtMS40MjYgMS44MDktMy41NDIgMy4yNjgtNS42OTcgMy4wNjctMi4xNTUtLjItMy41LTEuNjY2LTIuODAyLTQuNzg4LjU5LTIuNTk4IDEuNTkyLTUuMjkgMi4yMDctNy4wMjcuNTE0LTEuNDU2LjYxOC0yLjQwNy4yOTQtMi43NS0uMTAzLS4xMTQuMDU1LS4yNS4xOTQtLjMyNCAxLjY5LS44ODYgNC4zOTQtLjMxNCAzLjYzIDIuMDktLjgwMiAyLjUyNy0yLjI1NSA2LjQ5LTIuNTUgNy40LS43MzcgMi4yODctLjI5IDMuNTIzLjc1NSAzLjU4IDEuMDQ1LjA2IDIuNDMtLjk2IDMuNDItMi41MDMgMS43Ni0yLjUyNCAyLjU4MS01LjY4NSAzLjM3Ny03Ljg4Mi4yMDQtLjU2LjUyNy0xLjg2Ni4xODUtMi4zNTItLjA5MS0uMTIzLjA2Ny0uMjU4LjI3NS0uMzcyIDEuNTM3LS44NDkgNC4yODUtLjY0IDMuNDAyIDIuNjA4eiIgZmlsbD0iIzVGMDA4MCIvPgogICAgPC9nPgo8L3N2Zz4K" 
+            alt="kerly_logo">
+            <span class="logo_name">뷰티컬리</span>
             </div>
+            <div class="hd_searchbar">
+                <input type="text" placeholder="뷰티 상품을 검색하세요">
+                <button id="submit" aria-label="submit"></button>
+            </div>
+            <div class="hd_icons">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" 
+                        fill="none"><path fill="#333" fill-rule="evenodd" 
+                        d="M11.999 5.68A4.3 4.3 0 0 0 9.05 6.836 3.93 3.93 0 0 0 7.8 9.696c0 .809.254 1.594.723 2.255a4.17 4.17 0 0 0 1.889 1.465 4.4 4.4 0 0 0 2.396.223 4.26 4.26 0 0 0 2.14-1.081 3.97 3.97 0 0 0 1.169-2.066c.167-.791.08-1.61-.245-2.352a4.06 4.06 0 0 0-1.561-1.798 4.34 4.34 0 0 0-2.311-.662M10.422 8.29A2.3 2.3 0 0 1 12 7.68c.448 0 .88.125 1.245.354.363.23.637.548.796.91s.199.756.119 1.135c-.08.38-.28.737-.583 1.024a2.26 2.26 0 0 1-1.137.57c-.438.082-.892.04-1.301-.12a2.17 2.17 0 0 1-.984-.758 1.9 1.9 0 0 1-.355-1.098c0-.516.216-1.023.623-1.406" clip-rule="evenodd"></path><path fill="#333" fill-rule="evenodd" d="M12 .4h-.002c-2.58.003-5.064.97-6.904 2.706-1.843 1.737-2.892 4.106-2.895 6.59v.002c0 3.919 2.197 7.268 4.302 9.592 2.122 2.344 4.284 3.794 4.49 3.93a1.83 1.83 0 0 0 2.017 0c.205-.136 2.368-1.586 4.49-3.93 2.104-2.324 4.301-5.673 4.301-9.592v-.002c-.003-2.484-1.051-4.853-2.894-6.59C17.064 1.37 14.58.403 12 .4M6.466 4.56c1.458-1.374 3.447-2.157 5.533-2.16 2.086.003 4.076.786 5.534 2.16 1.456 1.374 2.264 3.223 2.266 5.139 0 3.18-1.803 6.061-3.784 8.249A24.2 24.2 0 0 1 12 21.488a24.2 24.2 0 0 1-4.016-3.54C6.003 15.76 4.2 12.878 4.2 9.698c.003-1.915.81-3.764 2.267-5.137" 
+                    clip-rule="evenodd"></path></svg></button>
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" 
+                        fill="none"><path fill="#333" fill-rule="evenodd" 
+                        d="M12.68 4.742c2.36-2.323 6.181-2.323 8.542 0a5.91 5.91 0 0 1 0 8.45l-7.017 6.905a3.144 3.144 0 0 1-4.41 0L4.19 14.584l-1.414-1.392a5.91 5.91 0 0 1 0-8.45c2.361-2.323 6.182-2.323 8.543 0l.68.67zm7.072 1.492a4.01 4.01 0 0 0-5.602 0L12 8.35 9.85 6.234a4.01 4.01 0 0 0-5.603 0 3.82 3.82 0 0 0 0 5.466l1.414 1.392 5.604 5.513a1.05 1.05 0 0 0 1.47 0l7.017-6.905a3.817 3.817 0 0 0 0-5.466" 
+                    clip-rule="evenodd"></path></svg></li>
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" 
+                        fill="none"><path fill="#333" fill-rule="evenodd" 
+                        d="M.3 2h4.1a1 1 0 0 1 .972.763L5.795 4.5h15.26a2 2 0 0 1 1.952 2.434l-1.755 7.9a2 2 0 0 1-1.953 1.566H8.104a2 2 0 0 1-1.953-1.566L5.068 9.958h-.002L3.616 4H.3zm6.048 4.5 1.756 7.9h11.195l1.756-7.9zm2.954 12.7a.7.7 0 1 0 0 1.4.7.7 0 0 0 0-1.4m-2.7.7a2.7 2.7 0 1 1 5.4 0 2.7 2.7 0 0 1-5.4 0m11.498-.7a.7.7 0 1 0 0 1.4.7.7 0 0 0 0-1.4m-2.7.7a2.7 2.7 0 1 1 5.4 0 2.7 2.7 0 0 1-5.4 0" 
+                    clip-rule="evenodd"></path></svg>
+                    <div class="cart">
+                    <span>0</span>
+                    </div>
+                </button>
+            </div>
+        </div>        
+    </header>
+    <nav>
+        <div class="nav_left">
+            <div class="hamberger_btn">
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                width="16" height="15.4" viewBox="0 0 16 16" fill="none" style="flex-shrink: 0;"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V1.87083H0V0ZM0 6.768H16V8.63883H0V6.768ZM0 13.536H16V15.4068H0V13.536Z" fill="#333">
+                </path></svg>
+            </div>
+            <p>카테고리</p>
+            <div>
+                <img src="" alt="">logo
+                <p>스킨케어</p>
+            </div>   
+            <div>
+                <img src="" alt="">logo
+                <p>메이크업</p>
+            </div>   
+            <div>
+                <img src="" alt="">logo
+                <p>클렌징</p>
+            </div>   
+            <div>
+                <img src="" alt="">logo
+                <p>선케어</p>
+            </div>   
+            <div>
+                <img src="" alt="">logo
+                <p>헤어케어</p>
+            </div>   
+            <div>
+                <img src="" alt="">logo
+                <p>바디케어</p>
+            </div>   
+            <div>
+                <img src="" alt="">logo
+                <p>구강위생용품</p>
+            </div>   
+            <div>
+                <img src="" alt="">logo
+                <p>더모 코스메틱</p>
+            </div>   
+            <div>
+                <img src="" alt="">logo
+                <p>향수디퓨저</p>
+            </div>   
+            <div>
+                <img src="" alt="">logo
+                <p>유아동</p>
+            </div>   
+            <div>
+                <img src="" alt="">logo
+                <p>남성</p>
+            </div>   
+            <div>
+                <img src="" alt="">logo
+                <p>스킨케어</p>
+            </div>   
+            <div>
+                <img src="" alt="">logo
+                <p>스킨케어</p>
+            </div>   
+            <div>
+                <img src="" alt="">logo
+                <p>스킨케어</p>
+            </div>   
+            <div>
+                <img src="" alt="">logo
+                <p>스킨케어</p>
+            </div>   
+            
         </div>
+        <ul class="nav_center">
+            <li><a href="#">베스트</a></li>
+            <li><a href="#">브랜드관</a></li>
+            <li><a href="#">신상</a></li>
+            <li><a href="#">특가/혜택</a></li>            
+        </ul>
+        <ul class="nav_right">
+            <li><a href="#">
+                <span>샛별하루</span>
+                <span>배송안내</span>
+            </a></li>
+        </ul>
+    </nav>    
+
+    <!-- main 시작 -->
+    <div class="mainHeader">
+      <div class="container">
+        <div class="mainBox">
+          <img name="mainImg" src="./images/mainHeader01.png" alt="" />
+        </div>
+        <div class="mainBox">
+          <img name="mainImg" src="./images/mainHeader02.png" alt="" />
+        </div>
+        <div class="mainBox">
+          <img name="mainImg" src="./images/mainHeader03.jpg" alt="" />
+        </div>
+        <div class="mainBox">
+          <img name="mainImg" src="./images/mainHeader04.png" alt="" />
+        </div>
+        <div class="mainBox">
+          <img name="mainImg" src="./images/mainHeader05.png" alt="" />
+        </div>
+        <div class="mainBox">
+          <img name="mainImg" src="./images/mainHeader06.png" alt="" />
+        </div>
+        <div class="mainBox">
+          <img name="mainImg" src="./images/mainHeader07.jpg" alt="" />
+        </div>
+        <div class="mainBox">
+          <img name="mainImg" src="./images/mainHeader08.png" alt="" />
+        </div>
+        <div class="mainBox">
+          <img name="mainImg" src="./images/mainHeader09.png" alt="" />
+        </div>
+        <div class="mainBox">
+          <img name="mainImg" src="./images/mainHeader10.jpg" alt="" />
+        </div>
+        <div class="mainBox">
+          <img name="mainImg" src="./images/mainHeader11.png" alt="" />
+        </div>
+        <div class="mainBox">
+          <img name="mainImg" src="./images/mainHeader12.png" alt="" />
+        </div>
+        <div class="mainBox">
+          <img name="mainImg" src="./images/mainHeader13.jpg" alt="" />
+        </div>
+      </div>
+    </div>
     <section class="section1">
-        <div class="text">
-            <span class="title">🌿지금 필요한 셀프케어 ~82%</span>
-            <p class="subTitle">인기 브랜드 ~12% 쿠폰까지!</p>
+      <div class="text">
+        <div class="title">
+            🌿지금 필요한 셀프케어 ~82%
+            <img src="./images/화살표.png" alt="">
         </div>
-        <div class="detail">
-            <div class="box1">
-                <div class="img"></div>
+        <p class="subTitle">인기 브랜드 ~12% 쿠폰까지!</p>
+      </div>
+      <div class="detail">
+        <div class="backButton"></div>
+
+        <div class="slide-window">
+            <div class="slide-list">
+                <div class="box1">
+                <div class="img">
+                    <div class="coupon1">12% 쿠폰</div>
+                </div>
                 <div class="cart">🛒담기</div>
-                <div class="info">[동국제약] 센텔리안24 마데카 스타톡세럼 듀오세트 ...</div>
+                <div class="info">
+                    [동국제약] 센텔리안24 마데카 스타톡세럼 듀오세트 ...
+                </div>
                 <span class="originPrice"><del>82,000원</del></span>
                 <div class="salePrice">
                     <span class="rate">52%</span>
                     <span class="realPrice">38,800원</span>
                 </div>
                 <div class="review">💬+999</div>
-            </div>
-            <div class="box2">
-                <div class="img"></div>
+                </div>
+                <div class="box2">
+                <div class="img">
+                    <div class="max">
+                        <p>최대혜택가 46,322원</p>
+                    </div>
+                    <div class="coupon2">10%쿠폰+증정</div>
+                </div>
                 <div class="cart">🛒담기</div>
-                <div class="info">[에스트라] 아토베리어365 크림 80ml 2개 세트 ...</div>
+                <div class="info">
+                    [에스트라] 아토베리어365 크림 80ml 2개 세트 ...
+                </div>
                 <span class="originPrice"><del>66,000원</del></span>
                 <div class="salePrice">
                     <span class="rate">22%</span>
                     <span class="realPrice">51,480원</span>
                 </div>
                 <div class="review">💬+999</div>
-            </div>
-            <div class="box3">
-                <div class="img"></div>
+                </div>
+                <div class="box3">
+                <div class="img">
+                    <div class="coupon3">증정이벤트</div>
+                </div>
                 <div class="cart">🛒담기</div>
-                <div class="info">[세타필] 모이스춰라이징 저자극 고보습 로션 473mL</div>
+                <div class="info">
+                    [세타필] 모이스춰라이징 저자극 고보습 로션 473mL
+                </div>
                 <span class="originPrice"><del>21,500원</del></span>
                 <div class="salePrice">
                     <span class="rate">49%</span>
                     <span class="realPrice">10,900원</span>
                 </div>
                 <div class="review">💬+999</div>
-            </div>
-            <div class="box4">
-                <div class="img"></div>
+                </div>
+                <div class="box4">
+                <div class="img">
+                    <div class="coupon3">증정이벤트</div>
+                </div>
                 <div class="cart">🛒담기</div>
                 <div class="info">[헤드스파7] 비오틴 모근강화 샴트리샴푸</div>
                 <span class="originPrice"><del>35,000원</del></span>
@@ -106,18 +260,76 @@
                     <span class="realPrice">38,800원</span>
                 </div>
                 <div class="review">💬+999</div>
+                </div>
+                <div class="box5">
+                <div class="img"></div>
+                <div class="cart">🛒담기</div>
+                <div class="info">[도브] 포밍 핸드워시 240/430ml 4종(본품, 리필 택1)</div>
+                <span class="originPrice"><del>5,900원</del></span>
+                <div class="salePrice">
+                    <span class="rate">50%</span>
+                    <span class="realPrice">2,950원~</span>
+                </div>
+                <div class="review">💬+999</div>
+                </div>
+                <div class="box6">
+                <div class="img"></div>
+                <div class="cart">🛒담기</div>
+                <div class="info">
+                    [덴프스] 덴마크 유산균이야기(60일분)
+                </div>
+                <span class="originPrice"><del>92,000원</del></span>
+                <div class="salePrice">
+                    <span class="rate">66%</span>
+                    <span class="realPrice">30,900원</span>
+                </div>
+                <div class="review">💬+9,999</div>
+                </div>
+                <div class="box7">
+                <div class="img"></div>
+                <div class="cart">🛒담기</div>
+                <div class="info">
+                    [메디트리] 스페인산 유디농 레몬즙 스틱 100 2종(택1)
+                </div>
+                <span class="originPrice"><del>20,000원</del></span>
+                <div class="salePrice">
+                    <span class="rate">71%</span>
+                    <span class="realPrice">5,640원~</span>
+                </div>
+                <div class="review">💬+999</div>
+                </div>
+                <div class="box8">
+                <div class="img"></div>
+                <div class="cart">🛒담기</div>
+                <div class="info">
+                    [피지오겔] DMT 페이셜 크림 150mL
+                </div>
+                <span class="originPrice"><del>47,500원</del></span>
+                <div class="salePrice">
+                    <span class="rate">53%</span>
+                    <span class="realPrice">22,200원</span>
+                </div>
+                <div class="review">💬+999</div>
+                </div>
             </div>
-        </div> 
+         <div class="nextButton"></div>  
+        </div>
     </section>
 
     <section class="section2">
-        <div class="text">
-            <span class="title">오직 뷰티컬리에서만 만나요</span>
-            <img src="" alt="">
-            <p class="subTitle">[Kurly Only] 특별한 단독 기획세트</p>
+      <div class="text">
+        <div class="title">
+            오직 뷰티컬리에서만 만나요
+            <img src="./images/" alt="">
         </div>
-        <div class="detail">
-            <div class="box5">
+        <p class="subTitle">[Kurly Only] 특별한 단독 기획세트</p>
+      </div>
+      <div class="detail">
+        <div class="backButton"></div>
+
+        <div class="slide-window">
+            <div class="slide-list">
+                <div class="boxA">
                 <div class="img"></div>
                 <div class="cart">🛒담기</div>
                 <div class="info">[비오템] 오 비타미네 바디 밀크 400ml 세트 ...</div>
@@ -127,71 +339,224 @@
                     <span class="realPrice">58,948원</span>
                 </div>
                 <div class="review">💬219</div>
-            </div>
-             <div class="box6">
-                <div class="img"></div>
+                </div>
+                <div class="boxB">
+                <div class="img">
+                    <div class="max">
+                        <p>최대혜택가 45,360원</p>
+                    </div>
+                    <div class="coupon2">10%쿠폰+증정</div>
+                </div>
                 <div class="cart">🛒담기</div>
-                <div class="info">[에스트라] 1+1 단독 리제덤365탄력 속광 캡슐세럼 리필 기획세트 ...</div>
+                <div class="info">
+                    [에스트라] 1+1 단독 리제덤365탄력 속광 캡슐세럼 리필 기획세트 ...
+                </div>
                 <span class="originPrice"><del>72,000원</del></span>
                 <div class="salePrice">
                     <span class="rate">30%</span>
                     <span class="realPrice">50,400원</span>
                 </div>
                 <div class="review">💬+999</div>
-            </div>
-            <div class="box7">
+                </div>
+                <div class="boxC">
                 <div class="img"></div>
                 <div class="cart">🛒담기</div>
-                <div class="info">[질스튜어트뷰티] 립 마스크 듀오 기프트세트 3종(택1, 쇼핑백 증정)</div>
+                <div class="info">
+                    [질스튜어트뷰티] 립 마스크 듀오 기프트세트 3종(택1, 쇼핑백 증정)
+                </div>
                 <span class="originPrice"><del>50,000원</del></span>
                 <div class="salePrice">
                     <span class="rate">15%</span>
                     <span class="realPrice">42,500원</span>
                 </div>
                 <div class="review">💬961</div>
-            </div>
-            <div class="box8">
+                </div>
+                <div class="boxD">
                 <div class="img"></div>
                 <div class="cart">🛒담기</div>
-                <div class="info">[아로셀] 보툴케어 프라임톡스 마스크 12매(+보툴케어 앰플 7일분 증정)</div>
+                <div class="info">
+                    [아로셀] 보툴케어 프라임톡스 마스크 12매(+보툴케어 앰플 7일분 증정)
+                </div>
                 <span class="originPrice"><del>120,000원</del></span>
                 <div class="salePrice">
                     <span class="rate">31%</span>
                     <span class="realPrice">82,000원</span>
                 </div>
                 <div class="review">💬17</div>
+                </div>
+                <div class="boxE">
+                <div class="img">
+                    <div class="coupon3">증정이벤트</div>
+                </div>
+                <div class="cart">🛒담기</div>
+                <div class="info">[달바] 로얄 인텐시브 미스트 세럼 100ml+엑스트라 퍼밍 탄력크림...</div>
+                <span class="originPrice"><del>88,000원</del></span>
+                <div class="salePrice">
+                    <span class="rate">66%</span>
+                    <span class="realPrice">29,900원</span>
+                </div>
+                <div class="review">💬166</div>
+                </div>
+                <div class="boxF">
+                <div class="img"></div>
+                <div class="cart">🛒담기</div>
+                <div class="info">
+                    [동국제약] 센텔리안24 더 마데카크림 기획세트(45ml*2개입+사셰 3개)
+                </div>
+                <span class="originPrice"><del>66,000원</del></span>
+                <div class="salePrice">
+                    <span class="rate">73%</span>
+                    <span class="realPrice">17,500원</span>
+                </div>
+                <div class="review">💬+999</div>
+                </div>
+                <div class="boxG">
+                <div class="img">
+                    <div class="coupon2">10%쿠폰+증정</div>
+                </div>
+                <div class="cart">🛒담기</div>
+                <div class="info">
+                    [아로마티카] 로즈마리 스칼프 스케일링 샴푸 540ML /리필 500ML 2종...
+                </div>
+                <span class="originPrice"><del>31,500원</del></span>
+                <div class="salePrice">
+                    <span class="rate">37%</span>
+                    <span class="realPrice">19,845원</span>
+                </div>
+                <div class="review">💬+999</div>
+                </div>
+                <div class="boxH">
+                <div class="img"></div>
+                <div class="cart">🛒담기</div>
+                <div class="info">
+                    [KS365] 데일리 향균처리 쿠션 퍼프 2종(택1) (5개입/15개입)
+                </div>
+                <span class="originPrice"><del>6,100원</del></span>
+                <div class="salePrice">
+                    <span class="rate">23%</span>
+                    <span class="realPrice">4,650원~</span>
+                </div>
+                <div class="review">💬+999</div>
+                </div>
             </div>
-        </div> 
+        <div class="nextButton"></div>        
+      </div>
     </section>
-    
+
     <section class="section3">
-        <div class="brand">브랜드관</div>
-        <div class="pic">
-            <div class="round1">
-                <div class="round1Img"></div>
-                <a href="">설화수</a>
+      <div class="brand">
+        <div class="brandTitle">브랜드관</div>
+        <img src="./images/화살표.png" alt="">
+    </div>
+      <div class="pic">
+        <div class="round1">
+          <div class="round1Img"></div>
+          <a href="">설화수</a>
+        </div>
+        <div class="round2">
+          <div class="round2Img"></div>
+          <a href="">시슬리</a>
+        </div>
+        <div class="round3">
+          <div class="round3Img"></div>
+          <a href="">랑콤</a>
+        </div>
+        <div class="round4">
+          <div class="round4Img"></div>
+          <a href="">스킨수티컬즈</a>
+        </div>
+        <div class="round5">
+          <div class="round5Img"></div>
+          <a href="">키엘</a>
+        </div>
+        <div class="round6">
+          <div class="round6Img"></div>
+          <a href="">조 말론 런던</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer 시작 -->
+     <footer id="footer-placeholder">
+        <div class="ft_outer1">
+            <div class="ft_med1">
+                <div class="customer">
+                    <p>고객행복센터</p>
+                </div>
+                <div class="phonenumber">
+                    <p>1644-1107</p>
+                    <p>월~토요일 오전7시-오후6시</p>
+                </div>
+                <div class="ft_button">
+                    <button>카카오톡문의</button>
+                    <p>월~토요일 | 오전 7시~오후 6시 <br>
+                    일/공휴일 | 오전 7시~오후1시</p>
+                </div>
+                <div class="ft_button">
+                    <button>1:1문의</button>
+                    <p>365일 <br>
+                    고객센터 운영시간에 순차적으로 답변드리겠습니다.</p>
+                </div>
+                <div class="ft_button">
+                    <button>대량주문문의</button>
+                    <p>월~금요일 | 오전 9시~오후 6시 <br>
+                    점심시간 | 낮12시~오후1시</p>
+                </div>    
+                <div class="ft_inquire">
+                    <a href="">비회원 문의: help@kerlycorp.com</a>                                        
+                </div>
+            </div>    
+            <div class="ft_med2">
+                <div class="ft_inner2">
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">컬리소개영상</a></li>
+                        <li><a href="#">투자정보</a></li>
+                        <li><a href="#">인재채용</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이용안내</a></li>
+                        <li><a href="#">입점신청</a></li>
+                    </ul>
+                    <div class="inner2_info">
+                        <p>법인명(상호): 주식회사 컬리 | 사업자등록번호: 61-81-23567 <a href="#">사업자정보확인</a></p>
+                        <p>통신판매업: 제2018-서울강남-1646호</p>
+                        <p>주소: 서울특별시 강남구 테헤란로 133, 18층(역삼동) | 대표이사: 김슬아</p>
+                        <p>채용문의: recruit@kurlycorp.com</p>
+                        <p>팩스: 070-750-6098</p>
+                    </div>
+                    <ul class="social">
+                        <li><a href="#"><img src="https://res.kurly.com/pc/ico/1810/ico_instagram.png" alt="컬리 인스타그램 바로가기" width="30px" height="30px"></a></li>
+                        <li><a href="#"><img src="https://res.kurly.com/pc/ico/1810/ico_fb.png" alt="컬리 페이스북 바로가기" width="30px" height="30px"></a></li>
+                        <li><a href="#"><img src="https://res.kurly.com/pc/ico/1810/ico_blog.png" alt="컬리 네이버블로그 바로가기" width="30px" height="30px"></a></li>
+                        <li><a href="#"><img src="https://res.kurly.com/pc/ico/1810/ico_youtube.png" alt="컬리 유튜브 바로가기" width="30px" height="30px"></a></li>
+                    </ul>
+                    </div>    
+                </div>
             </div>
-            <div class="round2">
-                <div class="round2Img"></div>
-                <a href="">시슬리</a>
-            </div>
-            <div class="round3">
-                <div class="round3Img"></div>
-                <a href="">랑콤</a>
-            </div>
-            <div class="round4">
-                <div class="round4Img"></div>
-                <a href="">스킨수티컬즈</a>
-            </div>
-            <div class="round5">
-                <div class="round5Img"></div>
-                <a href="">키엘</a>
-            </div>
-            <div class="round6">
-                <div class="round6Img"></div>
-                <a href="">조 말론 런던</a>
             </div>
         </div>
-    </section>
-</body>
+        <div class="ft_outer2">
+            <div class="ft_med3_left">
+                <img src="https://res.kurly.com/pc/ico/2208/logo_isms.svg" alt="인증 logo">
+                <p>[인증범위] 컬리 쇼핑몰 서비스 개발·운영<br>
+                (심사받지 않은 물리적 인프라 제외)<br>
+                [유효기간] 2025.01.15 ~ 2028.01.14
+                </p>
+            </div>
+            <div class="ft_med3_right">
+                <img src="https://res.kurly.com/pc/ico/2208/logo_wooriBank.svg" alt="우리은행 logo">
+                <p>고객님이 현금으로 결제한 금액에 대해 우리은행과<br>
+                채무지급보증 계약을 체결하여 안전거래를 보장하고<br>
+                있습니다.</p>
+
+            </div>
+        </div>
+        <div class="ft_outer3">
+            <p>컬리에서 판매되는 상품 중에는 컬리에 입점한 개별 판매자가 판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다.</p>
+            <p>마켓플레이스(오픈마켓) 상품의 경우 컬리는 통신판매중개자로서 통신판매의 당사자가 아닙니다. 컬리는 해당 상품의 주문, 품질, 교환/환불 등 의무와 책임을 부담하지 않습니다.</p>
+            <p>© KURLY CORP. ALL RIGHTS RESERVED</p>
+        </div>
+    </footer>
+  </body>
 </html>

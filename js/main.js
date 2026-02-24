@@ -1,12 +1,13 @@
+
+//1. main 헤더 이미지 넘어가는 부분
 const container = document.querySelector('.container');
 const images = document.querySelectorAll('.mainBox');
 
-// 1. 첫 번째 이미지 복제하여 마지막에 추가
 const firstClone = images[0].cloneNode(true);
 container.appendChild(firstClone);
 
 let currentIndex = 0;
-const totalImages = images.length; // 원본 개수 (13개)
+const totalImages = images.length; // 이미지13개
 const imgWidth = 1900;
 
 function slide() {
@@ -27,5 +28,35 @@ function slide() {
     }
 }
 
-// 3초마다 실행
 setInterval(slide, 5000);
+
+
+
+//2. nextButton, backButton
+const sections = document.querySelectorAll('section');
+
+sections.forEach((section) => { //현재 section안에서만 요소찾기
+  const slideList = section.querySelector('.slide-list');
+  const nextBtn = section.querySelector('.nextButton');
+  const backBtn = section.querySelector('.backButton');
+
+  if (!slideList || !nextBtn || !backBtn) return; // 요소가 없으면 건너뛰게
+
+  let currentIdx = 0;
+  const slideWidth = 1068; // 이동 거리
+  const maxIdx = 1; // 총 2페이지 기준
+
+  nextBtn.addEventListener('click', () => {
+    if (currentIdx < maxIdx) {
+      currentIdx++;
+      slideList.style.transform = `translateX(-${currentIdx * slideWidth}px)`;
+    }
+  });
+
+  backBtn.addEventListener('click', () => {
+    if (currentIdx > 0) {
+      currentIdx--;
+      slideList.style.transform = `translateX(-${currentIdx * slideWidth}px)`;
+    }
+  });
+});
