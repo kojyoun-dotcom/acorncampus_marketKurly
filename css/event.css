@@ -2,7 +2,10 @@
     width: 1050px;
     /* height: 200px; */
     /* border: 1px solid black; */
-    margin: 0 auto;
+    margin: 50px auto; /*⭐ main 부분이 nav랑 겹쳐져서
+                            margin-top 50px 설정
+                          + margin-bottom 50px 설정
+                            (footer와 떨어지게) ⭐*/
 }
 .wrap-img{
     width: 1050px;

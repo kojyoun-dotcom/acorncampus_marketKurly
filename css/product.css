@@ -1,17 +1,18 @@
 
-main{
-
-}
 .container{
     width: 1050px;
-    height: 977px;
+    height: 1000px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 24px;
     gap: 70px;
-    margin: 0 auto;
+    margin: 50px auto; /*⭐ main 부분이 nav랑 겹쳐져서
+                            margin-top 50px 설정
+                          + margin-bottom 50px 설정
+                            (footer와 떨어지게) ⭐*/
+    
 }
 .left{
     width: 430px;
@@ -52,8 +53,8 @@ main{
 }
 .right{
     width: 559px;
-    height: 950px;
-    border: 1px solid black;
+    height: 970px;
+    /* border: 1px solid black; */
 }
 .brandBox{
     width: 430px;
@@ -65,6 +66,7 @@ main{
     margin-top: 30px;
     padding: 10px;
     position: relative;
+    cursor: pointer;
 }
 .B-text{
     padding: 5px 0;
@@ -123,6 +125,7 @@ main{
     justify-content: center;
     font-weight: bold;
     color: #8d4cc4;
+    margin-bottom: 8px;
     cursor: pointer;
 }
 .crownText a{
@@ -132,6 +135,7 @@ main{
     display: flex;
     margin: 10px 0;
     gap: 10px;
+    padding-left: 5px;
 }
 .secondText1{
     border-right: 1px solid gray;
@@ -140,7 +144,7 @@ main{
 [class^=secondText]{
     color: gray;
     cursor: pointer;
-    font-weight: bolder;
+    font-weight: normal;
 }
 .thirdLine{
     display: flex;
@@ -160,25 +164,25 @@ main{
 .shareImg{
     background-image: url(../images/share_icon.png);
     background-position: center;
-    background-size: cover;
+    background-size: 70%;
+    background-repeat: no-repeat;
     width:22px;
     height: 30px;
-    right: 0;
     position: absolute;
-    right: 10px;
+    right: 20px;
     cursor: pointer;
 }
 .subText{
-    font-size: 18px;
-    color: gray;
-    font-weight: 500;
+    font-size: 14px;
+    color: rgb(166, 165, 165);
+    font-weight: normal;
 }
 .forthLine, .fifthLine{
     display: flex;
     gap: 10px;
 }
 .forthLine{
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 .rate, .salePrice{
     font-size: 27px;
@@ -188,7 +192,9 @@ main{
     color: #FA622F;
 }
 .realPrice{
-    color: gray;
+    color: lightgray;
+    position: relative;
+    top: 10px;
 }
 .fifthLine > .rate{
     color: #8d4cc4;
@@ -212,23 +218,36 @@ main{
     font-size: 27px;
     font-weight: 800;
 }
-.infoImg::after {
+.infoImg1::after, 
+.infoImg2::after {
     content: "!";
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 14px;
     height: 14px;
-    background-color: #d1b2ff;
     color: white;
     font-size: 10px;
     border-radius: 50%;
     margin-left: 2px;
 }
+.infoImg1::after{
+    background-color: lightgray;
+    position: relative;
+    top: 7px;
+    right: 5px;
+}
+.infoImg2::after{
+    background-color: #d1b2ff;
+    position: relative;
+    top: 7px;
+}
 .firstPurchase {
     color: #8d4cc4;
     font-size: 13px;
     font-weight: bold;
+    position: relative;
+    top: 9px;
 }
 .firstPurchase::after {
     content: " ∨"; /* 화살표 추가 */
@@ -247,11 +266,14 @@ main{
     font-size: 15px;
     font-weight: bold;
     color: #333; 
+    cursor: pointer;
 }
-
 .sixthText {
     display: flex;
-    align-items: center; 
+    align-items: center;
+}
+.sixthText span {
+    color: #8d4cc4;
 }
 .next::after {
     content: ">";
@@ -267,11 +289,196 @@ main{
     border: 1px solid #8d4cc4;
     border-radius: 5px;
     margin-top: 10px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: center; 
     align-items: center;     
     font-size: 15px;
     font-weight: bold;
     color: #672091; 
-    
+    cursor: pointer;
+}
+.list {
+    border-top: 1px solid #f4f4f4;
+    display: flex;
+    padding: 20px 0;
+    color: #999;
+    font-size: 14px;
+}
+.listTitle { /* 타이틀 너비를 고정해서 오른쪽 내용들의 시작점을 맞춤 */
+    width: 120px; 
+    font-weight: 500;
+}
+.listInfo {
+    flex: 1; /* 남은 공간 차지 */
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.big {
+    color: #666;
+    font-weight: 500;
+}
+.small {
+    color: #999;
+    font-size: 12px;
+    line-height: 1.5;
+}
+/* 상품 선택 박스 */
+.select {
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    padding: 10px;
+}
+.selectName {
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+.selectDetail{
+    color: #333;
+    line-height: 20px;
+}
+.selectPrice {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sale-price {
+    font-weight: bold;
+    color: #333;
+    margin-right: 5px;
+}
+.original-price {
+    text-decoration: line-through;
+    color: #ccc;
+    font-size: 12px;
+}
+.count-stepper {
+    border: 1px solid #ddd;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+}
+.count-stepper button {
+    border: none; background: none; padding: 5px 10px; cursor: pointer;
+}
+.count-stepper span { padding: 0 10px; font-size: 13px; }
+
+/* 하단 총 금액 영역 */
+.total{
+    margin-top: 30px;
+    text-align: right;
+}
+.total-price-row {
+    /* border: 1px solid red; */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    gap: 15px;
+}
+.total-label {
+    font-weight: 500;
+    font-size: 16px;
+}
+.total-price {
+    font-size: 32px;
+    font-weight: 800;
+    color: #333;
+}
+.total-price span { 
+    font-size: 20px; 
+    margin-left: 2px; 
+}
+
+/* 버튼 영역 */
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+.wish-btn, .alarm-btn {
+    width: 56px;
+    height: 56px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.wish-btn{
+    background-image: url(../images/heart.png.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+.alarm-btn{
+    background-image: url(../images/bell.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+.cart-btn {
+    flex: 1;
+    height: 56px;
+    background-color: #5f0080; /* 컬리 시그니처 컬러 */
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.infoBox{
+    width: 1050px;
+    /* border: 1px solid greenyellow; */
+    display: flex;
+    margin: 0 auto;
+}
+.infoBox a{
+    text-align: center;
+    display: inline-block;
+    line-height: 50px;
+    width: 250px;
+    height: 57px;
+    border: 1px solid #f2f2f2;
+    background-color: #f2f2f261;
+}
+.event{
+    width: 799px;
+    height: 160px;
+    margin: 50px auto;
+    border: 1px solid #f2f2f2;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.event img{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 20%;
+}
+.event p{
+    position: absolute;
+    left: 40%;
+    font-size: 20px;
+}
+.eventMore{
+    background-image: url(../images/화살표아래.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 10%;
+}
+.comment, .use, .productInfo{
+   width: 1010px;
+   margin: 0 auto;
+   padding-bottom: 50px;
 }
