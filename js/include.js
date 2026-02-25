@@ -1,6 +1,5 @@
-/**
- * @file include.js
- * @description 공통 HTML 컴포넌트(헤더, 푸터 등)를 동적으로 불러오고,
+/*
+ *  공통 HTML 컴포넌트(헤더, 푸터 등)를 동적으로 불러오고,
  *              관련 스크립트를 초기화하는 역할을 합니다.
  *              이 방식을 사용하면 여러 페이지에서 헤더와 푸터를 재사용할 수 있어 유지보수가 용이해집니다.
  */
@@ -15,21 +14,14 @@
  *                                이 콜백은 동적으로 로드된 HTML 요소에 이벤트 리스너를 바인딩하는 등
  *                                후속 작업을 처리하는 데 매우 중요합니다.
  */
-function loadComponent(id, url, callback) {
-  // 1. fetch API를 사용하여 지정된 URL의 HTML 파일을 가져옵니다.
+function loadComponent(id, url, callback) { // 1. fetch API를 사용하여 지정된 URL의 HTML 파일을 가져옵니다.
   fetch(url)
-    // 2. 응답(response)을 텍스트 형태로 변환합니다.
-    .then((response) => response.text())
-    // 3. 텍스트로 변환된 HTML 데이터(data)를 처리합니다.
-    .then((data) => {
-      // 4. 지정된 ID를 가진 요소의 내부 HTML을 가져온 데이터로 교체합니다.
-      //    이 시점에 비로소 header.html의 내용이 index.html에 삽입됩니다.
-      document.getElementById(id).innerHTML = data;
-
-      // 5. 콜백 함수가 인자로 전달되었다면, HTML 삽입이 완료된 후에 실행합니다.
-      //    이를 통해 스크립트가 존재하지 않는 DOM 요소에 접근하려는 타이밍 문제를 해결합니다.
-      if (callback) {
-        callback();
+    .then((response) => response.text()) // 2. 응답(response)을 텍스트 형태로 변환합니다.
+    .then((data) => { // 3. 텍스트로 변환된 HTML 데이터(data)를 처리합니다.
+      document.getElementById(id).innerHTML = data; // 4. 지정된 ID를 가진 요소의 내부 HTML을 가져온 데이터로 교체합니다.
+      //   이 시점에 비로소 header.html의 내용이 index.html에 삽입됩니다.
+      if (callback) { // 5. 콜백 함수가 인자로 전달되었다면, HTML 삽입이 완료된 후에 실행합니다.
+        callback(); //    이를 통해 스크립트가 존재하지 않는 DOM 요소에 접근하려는 타이밍 문제를 해결합니다.
       }
     });
 }

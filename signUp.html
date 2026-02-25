@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="/common.css">
     <link rel="stylesheet" href="./css/signUp.css">
 
+    <!-- 카카오 주소 검색 API 스크립트 -->
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
     <script src="/js/header_seuil.js" defer></script>
     <script src="./js/include.js" defer></script>
     <script src="./js/signUp.js" defer></script>
@@ -64,9 +67,17 @@
                 <div class="form-group">
                     <label>주소<span class="ico-asterisk">*</span></label>
                     <div class="input-wrap">
-                        <button type="button" id="searchAddress" class="btn-address"><span class="ico-search"></span>주소
-                            검색</button>
-                        <p class="sub-text">배송지에 따라 상품 정보가 달라질 수 있습니다.</p>
+                        <button type="button" id="searchAddressBtn" class="btn-address"><span class="ico-search"></span>주소 검색</button>
+                        <p class="sub-text" id="address-guide">배송지에 따라 상품 정보가 달라질 수 있습니다.</p>
+                    </div>
+                    <!-- 주소 검색 후 표시될 영역 -->
+                    <div id="address-fields" style="display: none;">
+                        <div class="input-wrap">
+                            <input type="text" id="address" readonly>
+                        </div>
+                        <div class="input-wrap">
+                            <input type="text" id="detailAddress" placeholder="상세주소를 입력해주세요">
+                        </div>
                     </div>
                 </div>
 

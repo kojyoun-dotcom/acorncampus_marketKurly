@@ -1,50 +1,55 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Best</title>
 
-     <!-- 폰트 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=East+Sea+Dokdo&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best</title>
 
-    <!-- 장바구니 아이콘 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- 폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=East+Sea+Dokdo&family=Noto+Sans+KR:wght@100..900&display=swap"
+    rel="stylesheet">
 
-        <!-- 공통 UI 로드 스크립트 -->
-    <link rel="stylesheet" href="./common.css">
+  <!-- 장바구니 아이콘 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-        <!-- 이 페이지 전용 스크립트 -->
-    <link rel="stylesheet" href="./css/best.css">
-   
-    <!-- 공통 js 스크립트 -->
-    <script src="/js/header_seuil.js" defer></script>
-    <script src="/js/header_jy.js" defer></script>
-    <script src="/js/footer.js" defer></script>
-    <script src="/js/include.js" defer></script>
+  <!-- 공통 UI 로드 스크립트 -->
+  <link rel="stylesheet" href="./common.css">
 
-    <!-- 이 페이지 전용 js script -->
-     <script src="./js/best.js" defer></script>
+  <!-- 이 페이지 전용 스크립트 -->
+  <link rel="stylesheet" href="./css/best.css">
 
-  </head>
-  <body>
-<!-- 헤더 영역 -->
-    <header id="header-placeholder"></header>
+  <!-- 공통 js 스크립트 -->
+  <script src="/js/header_seuil.js" defer></script>
+  <script src="/js/header_jy.js" defer></script>
+  <script src="/js/footer.js" defer></script>
+  <script src="/js/include.js" defer></script>
+
+  <!-- 이 페이지 전용 js script -->
+  <script src="./js/best.js" defer></script>
+
+</head>
+
+<body>
+  <!-- 헤더 영역 -->
+  <header id="header-placeholder"></header>
 
 
+  <main class="main-section">
     <div class="best_box">
       <h2>뷰티컬리 베스트</h2>
       <div class="best_box_t">
         <ul>
-            <li ><a href="#"><span class="best_box_t_p">TOP300</span></a></li>
-            <li><a href="#">스킨케어</a></li>
-            <li><a href="#">럭셔리뷰티</a></li>
-            <li><a href="#">선물하기좋은</a></li>
-            <li><a href="#">메이크업</a></li>
-            <li><a href="#">인기급상승</a></li>
-            <li><a href="#">헤어바디구강</a></li>
+          <li><a href="#"><span class="best_box_t_p">TOP300</span></a></li>
+          <li><a href="#">스킨케어</a></li>
+          <li><a href="#">럭셔리뷰티</a></li>
+          <li><a href="#">선물하기좋은</a></li>
+          <li><a href="#">메이크업</a></li>
+          <li><a href="#">인기급상승</a></li>
+          <li><a href="#">헤어바디구강</a></li>
         </ul>
       </div>
     </div>
@@ -53,368 +58,368 @@
     <!--   왼쪽 화면 필터  -->
 
     <div class="best_container">
-      
+
       <div class="best_filter">
         <div class="best_filter_t">
-        <h3>필터</h3>
-        <div><button class="best_reset">초기화</button></div>
+          <h3>필터</h3>
+          <div><button class="best_reset">초기화</button></div>
         </div>
-        
+
         <div class="best_filter_box ">
-        <div class="best_fix" >
+          <div class="best_fix">
             <ul>
+              <li>
+                <button class="best_btn">✓</button>
+                <span class="best_purple">Kurly Only</span>
+                <span class="best_grey">443</span>
+              </li>
+              <li>
+                <button class="best_btn">✓</button>
+                <span class="best_purple">신상품</span>
+                <span class="best_grey">119</span>
+              </li>
+            </ul>
+
+          </div>
+          <div class="best_category">
+            <h3>카테고리</h3>
+            <div><button class="best_btn_up">^</button></div>
+            <ul>
+              <li>
+                <button class="best_btn">✓</button>
+                스킨케어
+                <span class="best_grey">1552</span>
+              </li>
+              <li>
+                <button class="best_btn">✓</button>
+                럭셔리뷰티
+                <span class="best_grey">1279</span>
+              </li>
+              <li>
+                <button class="best_btn">✓</button>
+                바디케어
+                <span class="best_grey">1059</span>
+              </li>
+              <li>
+                <button class="best_btn">✓</button>
+                메이크업
+                <span class="best_grey">903</span>
+              </li>
+              <li>
+                <button class="best_btn">✓</button>
+                헤어케어
+                <span class="best_grey">833</span>
+              </li>
+              <li>
+                <button class="best_btn">✓</button>
+                클렌징
+                <span class="best_grey">435</span>
+              </li>
+              <li>
+                <button class="best_btn">✓</button>
+                구강•위생용품
+                <span class="best_grey">422</span>
+              </li>
+              <li>
+                <button class="best_btn">✓</button>
+                뷰티소품•기기
+                <span class="best_grey">410</span>
+              </li>
+              <li>
+                <button class="best_btn">✓</button>
+                선케어
+                <span class="best_grey">272</span>
+              </li>
+              <li>
+                <button class="best_btn">✓</button>
+                더모 코스메틱
+                <span class="best_grey">266</span>
+              </li>
+              <h4>카테고리 더보기 ></h4>
+
+            </ul>
+          </div>
+          <div class="best_price">
+            <h3>가격</h3>
+            <div><button class="best_btn_up">^</button></div>
+            <div>
+              <ul>
+                <li>
+                  <button class="best_btn"></button>
+                  11,500원 미만
+                  <span class="best_grey">1499</span>
+                </li>
+                <li>
+                  <button class="best_btn"></button>
+                  11,500원 ~ 19,000원
+                  <span class="best_grey">1528</span>
+                </li>
+                <li>
+                  <button class="best_btn"></button>
+                  19,000원 ~ 36,000원
+                  <span class="best_grey">1492</span>
+                </li>
+                <li>
+                  <button class="best_btn"></button>
+                  36,000원 이상
+                  <span class="best_grey">1538</span>
+                </li>
+                <ul>
+            </div>
+          </div>
+          <div class="best_brand">
+            <h3>브랜드</h3>
+            <div><button class="best_btn_up">^</button></div>
+            <ul>
+              <ul class="bb1">
+                <li>가나다순 |</li>
+                <li>상품 많은 순</li>
+              </ul>
+              <div>
+                <ul class="bb2">
+                  <li><a href="#">전체</a></li>
+                  <li><a href="#">ㄱ</a></li>
+                  <li><a href="#">ㄴ</a></li>
+                  <li><a href="#">ㄷ</a></li>
+                  <li><a href="#">ㄹ</a></li>
+                  <li><a href="#">ㅁ</a></li>
+                  <li><a href="#">ㅂ</a></li>
+                  <li><a href="#">ㅅ</a></li>
+                  <li><a href="#">ㅇ</a></li>
+                  <li><a href="#">ㅈ</a></li>
+                  <li><a href="#">ㅊ</a></li>
+                  <li><a href="#">ㅋ</a></li>
+                  <li><a href="#">ㅌ</a></li>
+                  <li><a href="#">ㅍ</a></li>
+                  <li><a href="#">ㅎ</a></li>
+                  <li><a href="#">A-Z</a></li>
+                  <li><a href="#">ETC</a></li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li>
+                    <button class="best_btn">✓</button>
+                    가그린
+                    <span class="best_grey">4</span>
+                  </li>
+                  <li>
+                    <button class="best_btn">✓</button>
+                    갸스비
+                    <span class="best_grey">10</span>
+                  </li>
+                  <li>
+                    <button class="best_btn">✓</button>
+                    검가드
+                    <span class="best_grey">1</span>
+                  </li>
+                  <li>
+                    <button class="best_btn">✓</button>
+                    구달
+                    <span class="best_grey">24</span>
+                  </li>
+                  <li>
+                    <button class="best_btn">✓</button>
+                    그란츠
+                    <span class="best_grey">6</span>
+                  </li>
+                  <li>
+                    <button class="best_btn">✓</button>
+                    그래비티
+                    <span class="best_grey">9</span>
+                  </li>
+                  <li>
+                    <button class="best_btn">✓</button>
+                    그린벨
+                    <span class="best_grey">12</span>
+                  </li>
+                  <li>
+                    <button class="best_btn">✓</button>
+                    그린핑거
+                    <span class="best_grey">9</span>
+                  </li>
+                  <li>
+                    <button class="best_btn">✓</button>
+                    글래드 호텔
+                    <span class="best_grey">2</span>
+                  </li>
+                  <li>
+                    <button class="best_btn">✓</button>
+                    글린트
+                    <span class="best_grey">2</span>
+                  </li>
+                </ul>
+              </div>
+              <h4>브랜드 더보기 ></h4>
+          </div>
+          <div class="best_skintype">
+            <h3>피부타입</h3>
+            <div>
+              <ul>
                 <li>
                   <button class="best_btn">✓</button>
-                  <span class="best_purple">Kurly Only</span>
+                  건성 피부
+                  <span class="best_grey">104</span>
+                </li>
+                <li>
+                  <button class="best_btn">✓</button>
+                  지성 피부
+                  <span class="best_grey">55</span>
+                </li>
+                <li>
+                  <button class="best_btn">✓</button>
+                  복합성 피부
+                  <span class="best_grey">72</span>
+                </li>
+                <li>
+                  <button class="best_btn">✓</button>
+                  민감성 피부
+                  <span class="best_grey">103</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="best_type">
+            <h3>유형</h3>
+            <div>
+              <ul>
+                <li>
+                  <button class="best_btn">✓</button>
+                  Kurly Only
                   <span class="best_grey">443</span>
                 </li>
+              </ul>
+            </div>
+          </div>
+          <div class="best_hairtype">
+            <h3>헤어고민</h3>
+            <div>
+              <ul>
                 <li>
                   <button class="best_btn">✓</button>
-                  <span class="best_purple">신상품</span>
-                  <span class="best_grey">119</span>
+                  건조 모발
+                  <span class="best_grey">29</span>
                 </li>
-            </ul>
-       
-        </div>
-        <div class="best_category">
-           <h3>카테고리</h3>
-          <div><button class="best_btn_up">^</button></div>
-          <ul>
-            <li>
-               <button class="best_btn">✓</button>
-                스킨케어
-              <span class="best_grey">1552</span>
-            </li>
-            <li>
-               <button class="best_btn">✓</button>
-                럭셔리뷰티
-              <span class="best_grey">1279</span>
-            </li>
-            <li>
-               <button class="best_btn">✓</button>
-                바디케어
-              <span class="best_grey">1059</span>
-            </li>
-            <li>
-               <button class="best_btn">✓</button>
-                메이크업
-              <span class="best_grey">903</span>
-            </li>
-            <li>
-               <button class="best_btn">✓</button>
-                헤어케어
-              <span class="best_grey">833</span>
-            </li>
-            <li>
-               <button class="best_btn">✓</button>
-                클렌징
-              <span class="best_grey">435</span>
-            </li>
-            <li>
-               <button class="best_btn">✓</button>
-                구강•위생용품
-              <span class="best_grey">422</span>
-            </li>
-            <li>
-               <button class="best_btn">✓</button>
-                뷰티소품•기기
-              <span class="best_grey">410</span>
-            </li>
-            <li>
-               <button class="best_btn">✓</button>
-                선케어
-              <span class="best_grey">272</span>
-            </li>
-            <li>
-               <button class="best_btn">✓</button>
-                더모 코스메틱
-              <span class="best_grey">266</span>
-            </li>
-            <h4>카테고리 더보기 ></h4>
-     
-          </ul>
-        </div>
-        <div class="best_price">
-          <h3>가격</h3>
-          <div><button class="best_btn_up">^</button></div>
-          <div>
-          <ul>
-            <li>
-               <button class="best_btn"></button>
-                11,500원 미만
-              <span class="best_grey">1499</span>
-            </li>
-            <li>
-               <button class="best_btn"></button>
-                11,500원 ~ 19,000원
-              <span class="best_grey">1528</span>
-            </li>
-            <li>
-               <button class="best_btn"></button>
-                19,000원 ~ 36,000원
-              <span class="best_grey">1492</span>
-            </li>
-            <li>
-               <button class="best_btn"></button>
-                36,000원 이상
-              <span class="best_grey">1538</span>
-            </li>
-            <ul>
-           </div>
-        </div>
-        <div class="best_brand">
-          <h3>브랜드</h3>
-          <div><button class="best_btn_up">^</button></div>
-          <ul>
-          <ul class="bb1">
-            <li>가나다순 |</li>
-            <li>상품 많은 순</li>
-          </ul>
-          <div>
-            <ul class="bb2">
-              <li><a href="#">전체</a></li>
-              <li><a href="#">ㄱ</a></li>
-              <li><a href="#">ㄴ</a></li>
-              <li><a href="#">ㄷ</a></li>
-              <li><a href="#">ㄹ</a></li>
-              <li><a href="#">ㅁ</a></li>
-              <li><a href="#">ㅂ</a></li>
-              <li><a href="#">ㅅ</a></li>
-              <li><a href="#">ㅇ</a></li>
-              <li><a href="#">ㅈ</a></li>
-              <li><a href="#">ㅊ</a></li>
-              <li><a href="#">ㅋ</a></li>
-              <li><a href="#">ㅌ</a></li>
-              <li><a href="#">ㅍ</a></li>
-              <li><a href="#">ㅎ</a></li>
-              <li><a href="#">A-Z</a></li>
-              <li><a href="#">ETC</a></li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li>
-               <button class="best_btn">✓</button>
-                가그린
-              <span class="best_grey">4</span>
-              </li>
-              <li>
-               <button class="best_btn">✓</button>
-                갸스비
-              <span class="best_grey">10</span>
-              </li>
-              <li>
-               <button class="best_btn">✓</button>
-                검가드
-              <span class="best_grey">1</span>
-              </li>
-              <li>
-               <button class="best_btn">✓</button>
-                구달
-              <span class="best_grey">24</span>
-              </li>
-              <li>
-               <button class="best_btn">✓</button>
-                그란츠
-              <span class="best_grey">6</span>
-              </li>
-              <li>
-               <button class="best_btn">✓</button>
-                그래비티
-              <span class="best_grey">9</span>
-              </li>
-              <li>
-               <button class="best_btn">✓</button>
-                그린벨
-              <span class="best_grey">12</span>
-              </li>
-              <li>
-               <button class="best_btn">✓</button>
-                그린핑거
-              <span class="best_grey">9</span>
-              </li>
-              <li>
-               <button class="best_btn">✓</button>
-                글래드 호텔
-              <span class="best_grey">2</span>
-              </li>
-              <li>
-               <button class="best_btn">✓</button>
-                글린트
-              <span class="best_grey">2</span>
-              </li>
-            </ul>
-          </div>
-          <h4>브랜드 더보기 ></h4>
-        </div>
-        <div class="best_skintype">
-          <h3>피부타입</h3>
-          <div>
-            <ul>
-              <li>
-               <button class="best_btn">✓</button>
-                건성 피부
-              <span class="best_grey">104</span>
-              </li>
-              <li>
-               <button class="best_btn">✓</button>
-                지성 피부
-              <span class="best_grey">55</span>
-              </li>
-              <li>
-               <button class="best_btn">✓</button>
-               복합성 피부
-              <span class="best_grey">72</span>
-              </li>
-              <li>
-               <button class="best_btn">✓</button>
-               민감성 피부
-              <span class="best_grey">103</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="best_type">
-          <h3>유형</h3>
-          <div>
-            <ul>
-              <li>
-               <button class="best_btn">✓</button>
-                Kurly Only
-              <span class="best_grey">443</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="best_hairtype">
-          <h3>헤어고민</h3>
-          <div>
-           <ul>
-              <li>
-               <button class="best_btn">✓</button>
-                건조 모발
-              <span class="best_grey">29</span>
-              </li>
-              <li>
-               <button class="best_btn">✓</button>
-                손상 모발
-              <span class="best_grey">53</span>
-              </li>
-              <li>
-               <button class="best_btn">✓</button>
-                민감성 두피
-              <span class="best_grey">18</span>
-              </li>
-              <li>
-               <button class="best_btn">✓</button>
-                지루성 두피
-              <span class="best_grey">30</span>
-              </li>
-              <li>
-               <button class="best_btn">✓</button>
-                탈모
-              <span class="best_grey">19</span>
-              </li>
-              <li>
-               <button class="best_btn">✓</button>
-                볼륨 부족
-              <span class="best_grey">19</span>
-              <li>
-               <button class="best_btn">✓</button>
-                염색유지/새치
-              <span class="best_grey">5</span>
-              </li>
-            </ul>
+                <li>
+                  <button class="best_btn">✓</button>
+                  손상 모발
+                  <span class="best_grey">53</span>
+                </li>
+                <li>
+                  <button class="best_btn">✓</button>
+                  민감성 두피
+                  <span class="best_grey">18</span>
+                </li>
+                <li>
+                  <button class="best_btn">✓</button>
+                  지루성 두피
+                  <span class="best_grey">30</span>
+                </li>
+                <li>
+                  <button class="best_btn">✓</button>
+                  탈모
+                  <span class="best_grey">19</span>
+                </li>
+                <li>
+                  <button class="best_btn">✓</button>
+                  볼륨 부족
+                  <span class="best_grey">19</span>
+                <li>
+                  <button class="best_btn">✓</button>
+                  염색유지/새치
+                  <span class="best_grey">5</span>
+                </li>
+              </ul>
             </div>
-        </div>
-        <div class="best_benefit">
-          <h3>혜택</h3>
-          <div>
+          </div>
+          <div class="best_benefit">
+            <h3>혜택</h3>
+            <div>
+              <ul>
+                <li>
+                  <button class="best_btn">✓</button>
+                  할인상품
+                  <span class="best_grey">5506</span>
+                </li>
+                <li>
+                  <button class="best_btn">✓</button>
+                  한정수량
+                  <span class="best_grey">1</span>
+                </li>
+                <li>
+                  <button class="best_btn">✓</button>
+                  단독특가
+                  <span class="best_grey">2</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="best_release">
+            <h3>출시</h3>
             <ul>
               <li>
-               <button class="best_btn">✓</button>
-                할인상품
-              <span class="best_grey">5506</span>
+                <button class="best_btn">✓</button>
+                신상품
+                <span class="best_grey">119</span>
               </li>
-              <li>
-               <button class="best_btn">✓</button>
-                한정수량
-              <span class="best_grey">1</span>
-              </li>
-              <li>
-               <button class="best_btn">✓</button>
-               단독특가
-              <span class="best_grey">2</span>
-              </li>
-                </ul>
+            </ul>
           </div>
-        </div>
-        <div class="best_release">
-          <h3>출시</h3>
-          <ul>
-            <li>
-               <button class="best_btn">✓</button>
-               신상품
-              <span class="best_grey">119</span>
-              </li>
-          </ul>
-        </div>
-        <div class="best_wrappingtype">
-          <h3>포장타입</h3>
-          <ul>
-            <li>
-               <button class="best_btn">✓</button>
-              상온
-              <span class="best_grey">6059</span>
+          <div class="best_wrappingtype">
+            <h3>포장타입</h3>
+            <ul>
+              <li>
+                <button class="best_btn">✓</button>
+                상온
+                <span class="best_grey">6059</span>
               </li>
               <li>
-               <button class="best_btn">✓</button>
-               냉장
-              <span class="best_grey">3</span>
+                <button class="best_btn">✓</button>
+                냉장
+                <span class="best_grey">3</span>
               </li>
-          </ul>
-        </div>
-        <div class="best_delivery">
-          <h3>배송</h3>
-          <ul>
-            <li>
-               <button class="best_btn">✓</button>
-              샛별배송
-              <span class="best_grey">6057</span>
+            </ul>
+          </div>
+          <div class="best_delivery">
+            <h3>배송</h3>
+            <ul>
+              <li>
+                <button class="best_btn">✓</button>
+                샛별배송
+                <span class="best_grey">6057</span>
               </li>
               <li>
-               <button class="best_btn">✓</button>
-               판매자배송
-              <span class="best_grey">5</span>
+                <button class="best_btn">✓</button>
+                판매자배송
+                <span class="best_grey">5</span>
               </li>
-          </ul>
-        </div>
-        <div class="best_promotion">
-          <h3>프로모션</h3>
-          <ul>
-            <li>
-               <button class="best_btn">✓</button>
-               멤버스혜택
-              <span class="best_grey">1</span>
+            </ul>
+          </div>
+          <div class="best_promotion">
+            <h3>프로모션</h3>
+            <ul>
+              <li>
+                <button class="best_btn">✓</button>
+                멤버스혜택
+                <span class="best_grey">1</span>
               </li>
-          </ul>
-        </div>
-        <div class="best_except">
-          <h3>특정상품 제외</h3>
-          <ul>
-            <li>
-               <button class="best_btn">✓</button>
-               반려동물 상품
-              <span class="best_grey">2</span>
+            </ul>
+          </div>
+          <div class="best_except">
+            <h3>특정상품 제외</h3>
+            <ul>
+              <li>
+                <button class="best_btn">✓</button>
+                반려동물 상품
+                <span class="best_grey">2</span>
               </li>
-          </ul>
-        </div>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="best_items">
-         <div class="best_items_t">
-           <div>총 6,066건</div>
-         <div>
+        <div class="best_items_t">
+          <div>총 6,066건</div>
+          <div>
             <ul>
               <li><a href="#"><span class="best_black">추천순 </span> |</a></li>
               <li><a href="#">신상품 |</a></li>
@@ -423,12 +428,12 @@
               <li><a href="#">높은 가격순 |</a></li>
               <li><a href="#">낮은 가격순</a></li>
             </ul>
-           </div>
-         </div>
+          </div>
+        </div>
 
 
-         <!--     오른쪽 화면 items   -->
-         <div class="best_items_i">
+        <!--     오른쪽 화면 items   -->
+        <div class="best_items_i">
           <ul>
             <li>
               <a href="#"><img src="./images/best.images/best_01.jpg" alt=""></a>
@@ -456,7 +461,7 @@
             </li>
             <li>
               <a href="#"><img src="./images/best.images/best_03.jpg" alt=""></a>
-              <div class="best_coupon cp1" > 10% 쿠폰+증정 </div>
+              <div class="best_coupon cp1"> 10% 쿠폰+증정 </div>
               <div class="best_cart">🛒담기</div>
               <div class="best_items_c">
                 <p class="best_p1">샛별배송</p>
@@ -469,7 +474,7 @@
             </li>
             <li>
               <a href="#"><img src="./images/best.images/best_04.jpg" alt=""></a>
-               <div class="best_coupon cp1" > 10% 쿠폰+증정 </div>
+              <div class="best_coupon cp1"> 10% 쿠폰+증정 </div>
               <div class="best_cart">🛒담기</div>
               <div class="best_items_c">
                 <p class="best_p1">샛별배송</p>
@@ -545,7 +550,7 @@
               <div class="best_cart">🛒담기</div>
               <div class="best_items_c">
                 <p class="best_p1">샛별배송</p>
-              <p class="best_p2">[산타마리아노벨라] 바뇨쉬우마 라이트 패키지 (바디워시) 7종 (택1)_쇼핑백...</p>
+                <p class="best_p2">[산타마리아노벨라] 바뇨쉬우마 라이트 패키지 (바디워시) 7종 (택1)_쇼핑백...</p>
                 <p class="best_p3">샤워 내내 번지는 감각적인 향기</p>
                 <p class="best_p4">62,000원</p>
                 <p class="best_p5"><span class="best_red">5%</span> 58,900원~</p>
@@ -557,7 +562,7 @@
               <div class="best_cart">🛒담기</div>
               <div class="best_items_c">
                 <p class="best_p1">샛별배송</p>
-               <p class="best_p2">[클리오] (NEW컬러) 샤프 쏘 심플 워터프루프 펜슬 라이너 11종 (택1)</p>
+                <p class="best_p2">[클리오] (NEW컬러) 샤프 쏘 심플 워터프루프 펜슬 라이너 11종 (택1)</p>
                 <p class="best_p3">뷰티컬리 1위 아이라이너, 섬세하고 슬림한 멀티 라이팅</p>
                 <p class="best_p4">11,000원</p>
                 <p class="best_p5"><span class="best_red">10%</span> 9,900원</p>
@@ -613,20 +618,22 @@
               </div>
             </li>
           </ul>
-         </div>
+        </div>
       </div>
     </div>
 
 
     <!-- 쿠폰증정  -->
 
-    <div class="best_coupon cp1" > 10% 쿠폰+증정 </div>
+    <div class="best_coupon cp1"> 10% 쿠폰+증정 </div>
     <br>
     <div class="best_coupon cp2"> 5% 쿠폰+증정 </div>
-    <div class="best_coupon cp3" > 증정이벤트 </div>
+    <div class="best_coupon cp3"> 증정이벤트 </div>
 
-   
-     <!-- 푸터 영역 -->
-    <footer id="footer-placeholder"></footer>
-  </body>
+  </main>
+  
+  <!-- 푸터 영역 -->
+  <footer id="footer-placeholder"></footer>
+</body>
+
 </html>

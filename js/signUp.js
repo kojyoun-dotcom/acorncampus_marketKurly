@@ -20,8 +20,12 @@ document.addEventListener("DOMContentLoaded", () => {
   // --- DOM 요소 ---
   const userIdInput = document.getElementById("userId");
   const emailInput = document.getElementById("email");
+  const searchAddressBtn = document.getElementById("searchAddressBtn");
+  const addressFields = document.getElementById("address-fields");
+  const addressInput = document.getElementById("address");
+  const detailAddressInput = document.getElementById("detailAddress");
 
-  // --- 1. 약관 동의 체크박스 로직 ---
+  // ------------------------------------------ 1. 약관 동의 체크박스 로직 ------------------------------------------
   const allAgreeCheckbox = document.getElementById("all-agree");
   // '전체 동의'를 제외한 나머지 개별 동의 체크박스들
   const agreeCheckboxes = document.querySelectorAll(
@@ -60,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     checkbox.addEventListener("change", updateAllAgreeCheckbox);
   });
 
-  // --- 2. 중복 확인 로직 ---
+  // ------------------------------------------ 2. 중복 확인 로직 ------------------------------------------
   const checkIdBtn = document.getElementById("checkIdBtn");
   const checkEmailBtn = document.getElementById("checkEmailBtn");
 
@@ -117,7 +121,53 @@ document.addEventListener("DOMContentLoaded", () => {
     isEmailChecked = false;
   });
 
-  // --- 3. 회원가입 폼 제출 로직 ---
+  // ------------------------------------------ 주소 검색 로직 ------------------------------------------
+  searchAddressBtn.addEventListener("click", () => {
+    new daum.Postcode({
+      oncomplete: function (data) {
+        // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+        // 각 주소의 노출 규칙에 따라 주소를 조합한다.
+        let fullAddress = ""; // 최종 주소 변수
+        let extraAddress = ""; // 참고항목 변수
+
+        //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+        if (data.userSelectedType === "R") {
+          // 사용자가 도로명 주소를 선택했을 경우
+          fullAddress = data.roadAddress;
+        } else {
+          // 사용자가 지번 주소를 선택했을 경우(J)
+          fullAddress = data.jibunAddress;
+        }
+
+        // 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
+        if (data.userSelectedType === "R") {
+          if (data.bname !== "" && /[동|로|가]$/g.test(data.bname)) {
+            extraAddress += data.bname;
+          }
+          if (data.buildingName !== "" && data.apartment === "Y") {
+            extraAddress +=
+              extraAddress !== ""
+                ? ", " + data.buildingName
+                : data.buildingName;
+          }
+          if (extraAddress !== "") {
+            extraAddress = " (" + extraAddress + ")";
+          }
+          fullAddress += extraAddress;
+        }
+
+        // 우편번호와 주소 정보를 해당 필드에 넣는다.
+        addressInput.value = `(${data.zonecode}) ${fullAddress}`;
+
+        // 주소 필드를 화면에 표시하고, 상세주소 필드로 포커스를 이동한다.
+        addressFields.style.display = "block";
+        detailAddressInput.focus();
+      },
+    }).open();
+  });
+
+  // ------------------------------------------ 3. 회원가입 폼 제출 로직 ------------------------------------------
   const signupForm = document.getElementById("signupForm");
 
   signupForm.addEventListener("submit", (e) => {
@@ -129,6 +179,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const passwordConfirm = document.getElementById("passwordConfirm").value;
     const userName = document.getElementById("userName").value;
     const email = emailInput.value;
+    const address = addressInput.value;
+    const detailAddress = detailAddressInput.value;
 
     // 약관 동의 여부 가져오기
     const agreeTerms = document.getElementById("agree-terms").checked;
@@ -136,7 +188,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const agreeMarketing = document.getElementById("agree-marketing").checked;
 
     // 간단한 유효성 검사
-    if (!userId || !password || !passwordConfirm || !userName || !email) {
+    if (
+      !userId ||
+      !password ||
+      !passwordConfirm ||
+      !userName ||
+      !email ||
+      !address
+    ) {
       alert("필수 입력 항목을 모두 입력해주세요.");
       return;
     }
@@ -163,7 +222,10 @@ document.addEventListener("DOMContentLoaded", () => {
       password: password, // 실제 서비스에서는 비밀번호를 절대 평문으로 저장하지 않습니다.
       name: userName,
       email: email,
-      address: null, // 주소 API 연동 후 값을 채울 예정
+      address: {
+        full: address,
+        detail: detailAddress,
+      },
       agreements: {
         termsOfService: agreeTerms,
         privacyPolicy: agreePrivacy,
@@ -178,6 +240,7 @@ document.addEventListener("DOMContentLoaded", () => {
       email: memberInfo.email,
       name: memberInfo.name,
       password: memberInfo.password,
+      address: memberInfo.address, // 주소 정보 추가
     });
     localStorage.setItem("userDB", JSON.stringify(userDB));
     console.log("새로운 회원 정보가 DB에 추가되었습니다.", userDB);
@@ -196,6 +259,6 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     // 회원가입 완료 후 메인 페이지로 이동
-    window.location.href = "/index.html";
+    window.location.href = "/login.html";
   });
 });

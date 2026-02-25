@@ -1,12 +1,29 @@
-header {
+header.header {
   position: relative;
   width: 1050px;
   margin: 0 auto;
-  height: 150px;
+  height: 120px;
 }
+
+.logos {
+  display: flex;
+  align-items: center;
+  
+}
+
+.logos img {
+  width: 98px;
+  height: 50px;
+}
+
+.logos .logo_name {
+  font-size: 15px; 
+}
+
 .hd_first {
   height: 35px;
-  margin: 10px;
+  margin: 5px;
+  margin-top: 10px;
   margin-right: 10px;
   font-size: 12px;
 }
@@ -40,21 +57,23 @@ header {
   padding: 3px;
   line-height: 20px;
 }
+
+.customer {
+  z-index: 1000;
+}
+
 .hd_second {
   display: flex;
-  margin: 20px;
+  margin: 5px;
   text-align: center;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-.hd_second img {
-  margin-left: 0;
-}
+
 .hd_second .logo_name {
   color: var(--main-purple);
   margin-left: 10px;
   margin-right: 50px;
-  width: 100px;
 }
 
 .hd_searchbar {
@@ -88,9 +107,12 @@ header {
   display: flex;
   margin-left: 50px;
   position: relative;
+  gap: 17.5px; 
 }
 
-.hd_icons div {
+.cart {
+  margin: 0;
+  padding: 0;
   position: absolute;
   top: 0;
   right: 0;
@@ -99,18 +121,33 @@ header {
   background-color: var(--main-purple);
   border-radius: 50%;
 }
-.hd_icons span {
+
+.cart span {
+  margin: 0;
+  padding: 0;
   color: var(--border-color);
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 10px;
+  width: 15px;
+  height: 16.5px;
 }
 /*---------------nav---------------*/
 nav {
-  display: flex;
+  /* 그림자 추가 */
+  position: relative; /* z-index를 적용하기 위해 포지셔닝 컨텍스트를 생성합니다. */
+  height: 30px;
+  width: 100%;
+  border-bottom: 1px solid #f0f0f0;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 3px 4px 0px;
+  z-index: 1000;
+}
+.nav-inner {
   position: relative;
   width: 1050px;
+  height: 100%;
   margin: 0 auto;
-  /* margin: 30px; */
 }
 .nav_left {
   display: flex;
@@ -121,6 +158,16 @@ nav {
 .nav_left .hamberger_btn {
   margin-right: 10px;
 }
+
+.nav_left{
+/* 드래그 안되게하는거  */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
+}
+
 .nav_left .category {
   display: none;
   margin-top: 10px;
@@ -143,43 +190,13 @@ nav {
   position: relative;
 }
 
-/*---------------nav---------------*/
-nav {
-  display: flex;
-  position: relative;
-  width: 1050px;
-  margin: 0 auto;
-  height: 30px;
-  /* margin: 30px; */
-}
-.nav_left {
-  display: flex;
-  position: absolute;
-  left: 0;
-  cursor: pointer;
-}
-.nav_left .hamberger_btn {
-  margin-right: 10px;
-}
-.nav_left .category {
-  display: none;
-  margin-top: 10px;
-  margin-left: -30px;
-  margin-bottom: 10px;
-  padding: 10px;
-  width: 180px;
-  height: 500px;
-  border: var(--border-color);
-}
-.nav_left img {
-  width: 20px;
-  margin-right: 10px;
-  filter: grayscale(100%);
-}
-
 .nav_left .category.active {
   display: block;
   border: 1px solid var(--border-color);
+  background-color: #fff;
+
+  position: absolute;
+  top: 19.5px;
 }
 .nav_left .category > li:hover {
   background-color: var(--background-gray);
@@ -200,10 +217,11 @@ nav {
   width: 180px;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 20px;
+  margin-left: 10px;
   padding-bottom: 5px;
   text-align: center;
 }
+
 .subcategory li {
   line-height: 25px;
   padding-top: 10px;
@@ -218,11 +236,13 @@ nav {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  gap: 50px;
 
   color: var(--text-primary);
 }
-.nav_center a {
-  margin-left: 30px;
+
+.nav_center span{
+  font-size: 15px;
 }
 
 .nav_right li {
