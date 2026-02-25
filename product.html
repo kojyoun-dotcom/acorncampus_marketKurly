@@ -1,132 +1,206 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>product</title>
     <!-- 공통 UI 로드 스크립트 -->
     <link rel="stylesheet" href="css/common.css" />
 
     <!-- 이 페이지 전용 스크립트 -->
     <link rel="stylesheet" href="css/product.css" />
-    
+
     <!-- 공통 JS -->
     <script src="/js/header_seuil.js" defer></script>
     <script src="/js/header_jy.js" defer></script>
     <script src="/js/footer.js" defer></script>
     <script src="/js/include.js" defer></script>
 
-
     <!-- 이 페이지 전용 JS -->
+     <script src="/js/product.js" defer></script>
   </head>
   <body>
+    <!-- header 시작 -->
+    <header id="header-placeholder"></header>
 
-     <!-- header 시작 -->
-      <header id="header-placeholder"></header>
-
-     <!-- main  시작 -->
+    <!-- main  시작 -->
     <main>
-        <!-- 왼쪽부분 시작 -->
-        <section class="container">
-         <div class="left">
-            <div class="left-img">
-                <div class="coupon">+12%쿠폰</div>
-                
-                <div class="plusImg"></div>
-            </div>
+      <!-- 왼쪽부분 시작 -->
+      <section class="container">
+        <div class="left">
+          <div class="left-img">
+            <div class="coupon">+12%쿠폰</div>
 
-            <div class="brandBox">
-                <div class="B-text">
-                    <div class="brand">브랜드관</div>
-                    <div>
-                    <div class="brandName">동국제약<div class="btn"></div></div>
-                    </div>
+            <div class="plusImg"></div>
+          </div>
+
+          <div class="brandBox">
+            <div class="B-text">
+              <div class="brand">브랜드관</div>
+              <div>
+                <div class="brandName">
+                  동국제약
+                  <div class="btn"></div>
                 </div>
-
-                <div class="BoxHeart">
-                    <div class="heartImg">
-                        <div class="likeNum">205</div>
-                        </div>
-                </div>
-                
-            </div>
-         </div>
-
-         <!-- 오른쪽 부분 시작 -->
-         <div class="right">
-            <div class="firstLine">
-                    <div class="crown">
-                    <div class="crownText">더모 에센스/세험/앰플 1위</div>
-                    </div>
-
-                    <div class="crownText"><a href="">후기 7,996건</a></div>
-            </div>
-             
-            <div class="secondLine">
-                <div class="secondText1">샛별배송</div>
-                <div class="secondText2">동국제약</div>
+              </div>
             </div>
 
-            <div class="thirdLine">
-                <div class="title">
-                    <div class="titleText">
-                    [동국제약] 센텔리안24 마데카 스타톡세럼 듀오세트 (세험 50ml*2ea + 아이크림 본품 15ml)
-                    </div>
-                    <div class="subText">
-                        알찬 구성으로 만나는 미백 탄력 세럼
-                    </div>
-                </div>
-                
-                <div class="shareImg"></div>
+            <div class="BoxHeart">
+              <div class="heartImg">
+                <div class="likeNum">205</div>
+              </div>
             </div>
-
-            <div class="forthLine">
-                <span class="rate">52%</span>
-                <span class="salePrice">38,800원</span>
-                <span class="realPrice"><del>82,000원</del></span>
-                <span class="infoImg"></span>
-            </div>
-
-            <div class="fifthLine">
-                <span class="rate">56%</span>
-                <span class="salePrice">35,800원</span>
-                <span class="infoImg"></span>
-                <span class="firstPurchase">첫구매 최대혜택가</span>
-            </div>
-             
-            <div class="sixthLine">
-                <div class="sixthText">
-                    첫구매하면 35,800원에 구매, 무료배송까지
-                    <span class="next"></span>
-                </div>
-            </div>
-
-            <div class="seventhLine">
-                <div class="sixthText">
-                    [동국제약] 12% 쿠폰 + 증정보기 
-                    <span class="next"></span>
-                </div>
-            </div>
-
-            <div class="delivery">
-                <div class="deliTitle">배송</div>
-                <div class="deliInfo">
-                    <div class="big">샛별배송(내일아침)</div>
-                    <div class="small">
-                        23시간 전 주문 시 수도권/충청 내일 아침 7시 전 도착
-                        <p>(그 외 지역 아침 8시 전 도착)</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-            
-        </div>
-        </section>
 
+        <!-- 오른쪽 부분 시작 -->
+        <div class="right">
+          <div class="firstLine">
+            <div class="crown">
+              <div class="crownText">더모 에센스/세럼/앰플 1위</div>
+            </div>
+
+            <div class="crownText"><a href="">후기 7,996건</a></div>
+          </div>
+
+          <div class="secondLine">
+            <div class="secondText1">샛별배송</div>
+            <div class="secondText2">동국제약</div>
+          </div>
+
+          <div class="thirdLine">
+            <div class="title">
+              <div class="titleText">
+                [동국제약] 센텔리안24 마데카 스타톡세럼 듀오세트 (세럼 50ml*2ea
+                + 아이크림 본품 15ml)
+              </div>
+              <div class="subText">알찬 구성으로 만나는 미백 탄력 세럼</div>
+            </div>
+
+            <div class="shareImg"></div>
+          </div>
+
+          <div class="forthLine">
+            <span class="rate">52%</span>
+            <span class="salePrice">38,800원</span>
+            <span class="realPrice"><del>82,000원</del></span>
+            <span class="infoImg1"></span>
+          </div>
+
+          <div class="fifthLine">
+            <span class="rate">56%</span>
+            <span class="salePrice">35,800원</span>
+            <span class="infoImg2"></span>
+            <span class="firstPurchase">첫구매 최대혜택가</span>
+          </div>
+
+          <div class="sixthLine">
+            <div class="sixthText">
+              첫구매하면 <span>35,800원</span>에 구매, 무료배송까지
+              <span class="next"></span>
+            </div>
+          </div>
+
+          <div class="seventhLine">
+            <div class="sixthText">
+              [동국제약] 12% 쿠폰 + 증정보기
+              <span class="next"></span>
+            </div>
+          </div>
+
+          <div class="list">
+            <div class="listTitle">배송</div>
+            <div class="listInfo">
+              <div class="big">샛별배송(내일아침)</div>
+              <div class="small">
+                23시간 전 주문 시 수도권/충청 내일 아침 7시 전 도착
+                <p>(그 외 지역 아침 8시 전 도착)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="list">
+            <div class="listTitle">판매자</div>
+            <div class="listInfo">
+              <div class="big">컬리</div>
+            </div>
+          </div>
+
+          <div class="list">
+            <div class="listTitle">포장타입</div>
+            <div class="listInfo">
+              <div class="big">상온(종이포장)</div>
+              <div class="small">
+                택배배송으로 에코 포장이 스티로폼으로 대체됩니다.
+              </div>
+            </div>
+          </div>
+
+          <div class="list">
+            <div class="listTitle">상품선택</div>
+            <div class="listInfo">
+              <div class="select">
+                <div class="selectName"></div>
+                <div class="selectDetail">
+                  [동국제약] 센텔리안24 마데카 스타톡세럼 듀오세트 (세럼
+                  50ml*2ea + 아이크림 본품 15ml)
+                </div>
+                <div class="selectPrice">
+                  <div class="price-group">
+                    <span class="sale-price">38,800원</span>
+                    <span class="original-price">82,000원</span>
+                  </div>
+                  <div class="count-stepper">
+                    <button class="minus-btn">-</button>
+                    <span>1</span>
+                    <button class="plus-btn">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="total">
+            <div class="total-price-row">
+                <span class="total-label">총 상품금액</span>
+                <span class="total-price">38,800<span>원</span></span>
+            </div>
+            <div class="button-group">
+                <button class="wish-btn"></button>
+                <button class="alarm-btn"></button>
+                <button class="cart-btn">장바구니 담기</button>
+            </div>
+          </div>
+      </section>
+
+      <div class="container2">
+        <div class="infoBox">
+            <a href="">상품설명</a>
+            <a href="">상세정보</a>
+            <a href="">후기(7,998)</a>
+            <a href="">문의</a>
+        </div>
+      
+
+        <div class="event">
+            <img name= "eventImg" src="./images/centellian24event.png" alt="">
+            <p>[동국제약] 증정 이벤트</p>
+           <div class="eventMore"></div>
+        </div>
+
+        <div class="comment"><img src="./images/Kurly's Comment.jpg" alt="">
+        </div>
+
+        <div class="use"><img src="./images/사용법.jpg" alt="">
+        </div>
+
+        <div class="productInfo"><img src="./images/productInfo.jpg" alt=""></div>
+
+        </div>
     </main>
 
     <!-- footer 시작 -->
      <footer id="footer-placeholder"></footer>
 
-</body>
+  </body>
 </html>
