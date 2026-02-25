@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
       localStorage.setItem('loggedInUser', JSON.stringify(foundUser));
 
       // 메인 페이지로 이동
-      window.location.href = '/index.html';
+      window.location.href = '/main.html';
     } else {
       // 로그인 실패
       alert('아이디 또는 비밀번호가 일치하지 않습니다.');

@@ -1,10 +1,12 @@
+/* .mainPage {
+  padding-top: 45px;
+} */
 .mainHeader {
   width: 1900px;
   height: 370px;
   overflow: hidden;
   position: relative;
-  margin: 50px auto; /*⭐ main 부분이 nav랑 겹쳐져서
-                            margin-top 50px 설정⭐*/
+  margin: 0px auto;
 }
 .container {
   display: flex;
